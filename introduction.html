@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html 5</title>
+</head>
+
+<body>
+  <!-- 
+    1. What is HTML?
+    -HTML stands for Hyper Text Markup Language
+    -HTML is the standard markup language for creating Web pages
+    -HTML describes the structure of a Web page
+    -HTML consists of a series of elements or tags
+    -HTML elements or tags tells the browser how to display the content
+    -HTML elements contains piece of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+    2. What is an HTML Element?
+    -The HTML element is everything from the start tag to the end tag:
+
+    3. What are Web Browsers?
+    -The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
+    -A browser does not display the HTML tags, but uses them to determine how to display the document:
+
+    4. HTML5 Page Structure?
+
+    5. HTML History?
+    -Since the early days of the World Wide Web, there have been many versions of HTML:
+    1989 - 2017
+
+    6. Learn HTML Using Text Editor: VsCode, Notepadd++, Sublime, etc.
+    -Web pages can be created and modified by using professional HTML editors.
+    -Create a folder and create a file with .html extension and open it in your text editor. 
+    -View that HTML file or Page in Your Browser.
+
+    7. Html Documents
+    -All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+    -The HTML document itself begins with <html> and ends with </html>.
+    -The visible part of the HTML document is between <body> and </body>.
+    -The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+    -It must only appear once, at the top of the page (before any HTML tags).
+    -The <!DOCTYPE> declaration is not case sensitive.
+    -The <!DOCTYPE> declaration for HTML5.
+
+    7. Meta Tags
+    The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+    Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Kishori Tutorials teach Frontend Technologies.">
+      <meta name="keywords" content="HTML, CSS, JavaScript, Jquery, Bootstrap, Photoshop, React.js, Angular, Flexbox">
+      <meta name="author" content="Kishori Tutorials">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    Setting the Viewport -
+    The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+    You should include the following <meta> element in all your web pages:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    This gives the browser instructions on how to control the page's dimensions and scaling.
+    The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+    The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+    8. Html basic
+    -HTML Headings
+    -HTML Paragraphs
+    -HTML Links
+    -HTML Images
+    -HTML Attributes - style href target width height src alt
+    -lang attribute - You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+    -All HTML elements can have attributes
+    -Attributes provide additional information about elements
+    -Attributes are always specified in the start tag
+    -Attributes usually come in name/value pairs like: name="value"  
+
+    9. How to View HTML Source?
+    -Right click and inspect or press f12 or right top in settings tab
+    -Right click and click view page source
+    -An HTML element is defined by a start tag, some content, and an end tag:
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+    -HTML tags are not case sensitive: <P> means the same as <p>. But recommended to put in lowercase.
+    -Some HTML elements have no content (like the <br /> <hr /> <img /> <input /> element). These elements are called empty elements. Empty elements do not have an end tag!>
+
+
+
+
+    -#-#-#-#-#-#-#-#-#-    TOPICS    -#-#-#-#-#-#-#-#-#
+
+    HTML headings
+    
+    HTML paragraphs
+    
+    HTML empty elements or self closing elements
+    hr
+    br
+
+    HTML Formatting Elements
+    <b> - Bold text
+    <strong> - Important text
+    <i> - Italic text
+    <em> - Emphasized text
+    <mark> - Marked text
+    <small> - Smaller text
+    <del> - Deleted text
+    <ins> - Inserted text
+    <sub> - Subscript text
+    <sup> - Superscript text
+
+    HTML Quotation
+    <blockquote>
+    <q> 
+
+    HTML Comment Tags
+    Write your comments here
+
+    HTML Links - Hyperlinks
+    target - _self _blank
+    href - https://www.google.com    
+    mailto - href="mailto:someone@example.com"
+
+    HTML images
+    src
+    alt
+    width
+    height
+
+    HTML image map
+    <map>
+    <area>
+    usemap
+    The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    </map>
+    rect - defines a rectangular region
+    circle - defines a circular region
+    poly - defines a polygonal region
+    default - defines the entire region
+    for reference generator - https://www.image-map.net/
+
+    HTML tables
+    colspan
+    rowspan
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </tbody>
+</table>
+
+HTML Lists
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+HTML Block and Inline Elements
+The <div> element is often used as a container for other HTML elements.
+The <div> element has no required attributes, but style, class and id are common.
+The <div> element is a block-level element.
+This is a <span> element which is inline element.
+Block Elements - https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
+Inline Elements - https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+
+HTML iframes
+An HTML iframe is used to display a web page or youtube videos or any other outside page within a web page.
+The src attribute defines the URL of the page to embed
+Always include a title attribute (for screen readers)
+The height and width attributes specifies the size of the iframe
+Use border:none; to remove the border around the iframe
+
+HTML Forms
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+form
+label
+input
+textarea - rows cols
+select - option
+
+types:
+checkbox
+radio
+date
+number
+text
+file
+password
+range
+time
+submit
+button
+
+Form attributes - action, method, target, autocomplete
+Input attributes - value, readonly, disabled, size, maxlength, min, max, multiple with select and file, placeholder, required, height, width,
+
+Here are the different input types you can use in HTML:
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+
+HTML Multimedia
+Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.
+Web pages often contain multimedia elements of different types and formats.
+There are many video formats out there.
+The MP4, WebM, and Ogg formats are supported by HTML.
+The MP4 format is recommended by YouTube.
+Note: Only MP4, WebM, and Ogg video are supported by the HTML standard.
+Video syntax:
+<video width="320" height="240" autoplay controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+Note: The autoplay attribute does not work in mobile devices like iPad and iPhone.
+
+Audio syntax:
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+Youtube Syntax:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NZqXvPl7BOw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+HTML Entities & HTML Symbol Entities
+Some characters are reserved in HTML.
+If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+Character entities are used to display reserved characters in HTML.
+To display a less than sign (<) we must write: &lt; or &#60;
+
+Character Entities:
+https://www.w3schools.com/html/html_entities.asp
+
+Miscellaneous Symbols
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
+
+Arrows
+https://www.w3schools.com/charsets/ref_utf_arrows.asp
+
+Currency Symbols
+https://www.w3schools.com/charsets/ref_utf_currency.asp
+
+
+
+HTML API
+will teach you in a separate video series.
+
+
+
+
+
+    -->
+</body>
+
+</html>
