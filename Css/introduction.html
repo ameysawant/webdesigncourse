@@ -1,0 +1,716 @@
+<!-- 
+    1. What is Css?
+    CSS stands for Cascading Style Sheets
+    CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+
+    2. What is the difference between Css and Css3?
+    Css3 is the advance version of Css. It includes some additional new properties and animation properties
+
+    3. CSS Syntax
+    h1 { color : blue ; }
+    selector { property : value; }
+
+    4. There ways of inserting a CSS style:
+    a. Inline style
+    b. Internal style
+    c. External external
+    Note: An inline style has the highest priority, and will override external and internal styles and browser defaults.
+
+    d). Multiple Style Sheets priority
+    <head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <link rel="stylesheet" type="text/css" href="mystyle2.css">
+        <style>
+        h1 {
+        color: orange;
+        }
+        </style>
+    </head>
+
+    e) Cascading Order
+    What style will be used when there is more than one style specified for an HTML element?
+    All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+    e1) Inline style (inside an HTML element)
+    e2) External and internal style sheets (in the head section)
+    e3) Browser default style
+    So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+
+    5. CSS Comments
+    /*syntax:*/
+    Comments are used to explain the code, and may help when you edit the source code at a later date. 
+    Comments are ignored by browsers.
+
+    6. CSS Colors Values
+    Colors are specified using predefined color names like orange, tomato, Violet, etc., or RGB - rgb(255, 99, 71),
+    RGBA - rgb(255, 99, 71, 0.5)
+    HEX - #ff6347,
+    HSL, HSLA values.
+
+    7. Backgrounds
+    background-color - "red" "#ff0000" "rgb(255,0,0)"
+    background-image: url("paper.gif");
+    background-repeat: repeat-x; (repeat-x repeat-y no-repeat)
+    background-position (xpos, ypos)
+    background-attachment: (scroll | fixed)
+    background-size: (cover |100% | contain)
+    shorthand property for backgrounds:
+    background: #ffffff url("img_tree.png") no-repeat right top;
+
+    8. Borders
+    border: border-width border-style border-color;
+    border-top, border-right border-bottom border-left
+
+    9. Margins
+    margin, margin-top, margin-right, margin-bottom, margin-left
+    Tip: Negative values are allowed.
+          You can give values in px, %, rem, etc.
+    margin: 25px 50px 75px 100px; - trbl
+    margin: 25px 50px 75px; - t rl b
+    margin: 25px 50px; - tb rl
+    margin: 25px; - all four
+    margin: auto;
+
+    10. Padding
+    padding, padding-top, padding-right, padding-bottom, padding-left
+    Tip: Negative values are not allowed.
+           You can give values in px, %, rem, etc.
+    padding: 25px 50px 75px 100px; - trbl
+    padding: 25px 50px 75px; - t rl b
+    padding: 25px 50px; - tb rl
+    padding: 25px; - all four
+    padding: auto;
+
+    11. Height and Width
+    The height and width properties are used to set the height and width of an element.
+    The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+    Tip: You can give values in auto, %, px, rem, none, etc.
+
+    max-width -
+    The max-width property defines the maximum width of an element.
+    If the content is larger than the maximum width, it will automatically change the height of the element.
+    If the content is smaller than the maximum width, the max-width property has no effect.
+    Note: This prevents the value of the width property from becoming larger than max-width. The value of the max-width property overrides the width property.
+
+    min-width - 
+    The min-width property defines the minimum width of an element.
+    If the content is smaller than the minimum width, the minimum width will be applied.
+    If the content is larger than the minimum width, the min-width property has no effect.
+    Note: This prevents the value of the width property from becoming smaller than min-width.
+
+    max-height -
+    The max-height property defines the maximum height of an element.
+    If the content is larger than the maximum height, it will overflow. How the container will handle the overflowing content is defined by the overflow property.
+    If the content is smaller than the maximum height, the max-height property has no effect.
+    Note: This prevents the value of the height property from becoming larger than max-height. The value of the max-height property overrides the height property.
+
+    min-height - 
+    The min-height property defines the minimum height of an element.
+    If the content is smaller than the minimum height, the minimum height will be applied.
+    If the content is larger than the minimum height, the min-height property has no effect.
+    Note: This prevents the value of the height property from becoming smaller than min-height.
+
+    12. Box Model
+    The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+    Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+
+    13. Box-Sizing
+    By default, the width and height of an element is calculated like this:
+    width + padding + border = actual width of an element
+    height + padding + border = actual height of an element
+    The box-sizing property allows us to include the padding and border in an element's total width and height. Remember this does not include margin.
+
+    14. Outline
+    outline-style
+    outline-color
+    outline-width
+    outline-offset
+    outline   
+    
+    outline-style: dotted;
+    outline-width: thin;
+    outline-color: red;
+    outline: 1px solid red;
+    outline-offset: 25px;
+
+    dotted - Defines a dotted outline
+    dashed - Defines a dashed outline
+    solid - Defines a solid outline
+    double - Defines a double outline
+    groove - Defines a 3D grooved outline
+    ridge - Defines a 3D ridged outline
+    inset - Defines a 3D inset outline
+    outset - Defines a 3D outset outline
+    none - Defines no outline
+    hidden - Defines a hidden outline
+
+    15. Text
+    color:red;
+
+    text-align: left right center justify
+
+    vertical-align: top middle bottom
+    <p>An <img class="top" src="w3schools_logo.gif" alt="W3Schools" width="270" height="50"> image with a top alignment.</p><br>
+
+    text-decoration: underline, overline, line-through, none;
+    text-transform: uppercase, lowercase, capitalize;
+    text-indent 50px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    word-spacing: 100px;
+    white-space: nowrap;
+    text-shadow: h-shadow v-shadow blur-radius color;
+
+    16. Fonts
+    The CSS font properties define the font family, boldness, size, and the style of a text.
+    Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
+
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal italic oblique bold;
+    font-variant: normal small-caps;
+    font-size: 40px 4rem, 20%;
+
+    Shorthand Property:
+    font: italic small-caps bold 12px/30px Georgia, serif;
+    font-style
+    font-variant
+    font-weight
+    font-size/line-height
+    font-family
+
+    @font-face Rule
+    @font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.ttf);
+    }
+    Browser Support for Font Formats
+    https://www.w3schools.com/css/css3_fonts.asp
+    
+    Google Fonts
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    17. Icons
+    https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    18. Links
+    a:link - a normal, unvisited link
+    a:visited - a link the user has visited
+    a:hover - a link when the user mouses over it
+    a:active - a link the moment it is clicked
+    Note: a:hover MUST come after a:link and a:visited
+    a:active MUST come after a:hover
+
+    This example demonstrates the different types of cursors (can be useful for links):
+    Cursors:
+    <span style="cursor: auto">auto</span><br>
+    <span style="cursor: crosshair">crosshair</span><br>
+    <span style="cursor: default">default</span><br>
+    <span style="cursor: e-resize">e-resize</span><br>
+    <span style="cursor: help">help</span><br>
+    <span style="cursor: move">move</span><br>
+    <span style="cursor: n-resize">n-resize</span><br>
+    <span style="cursor: ne-resize">ne-resize</span><br>
+    <span style="cursor: nw-resize">nw-resize</span><br>
+    <span style="cursor: pointer">pointer</span><br>
+    <span style="cursor: progress">progress</span><br>
+    <span style="cursor: s-resize">s-resize</span><br>
+    <span style="cursor: se-resize">se-resize</span><br>
+    <span style="cursor: sw-resize">sw-resize</span><br>
+    <span style="cursor: text">text</span><br>
+    <span style="cursor: w-resize">w-resize</span><br>
+    <span style="cursor: wait">wait</span>
+
+    19. List
+    In HTML, there are two main types of lists:
+    unordered lists (<ul>) - the list items are marked with bullets
+    ordered lists (<ol>) - the list items are marked with numbers or letters
+    The CSS list properties allow you to:
+    Set different list item markers for ordered lists
+    Set different list item markers for unordered lists
+    Set an image as the list item marker
+    Add background colors to lists and list items
+
+    20. Tables
+    The look of an HTML table can be greatly improved with CSS
+    table, th, td {border: 1px solid black;}
+    table {width: 100%; border-collapse: collapse;}
+    vertical-align, text-align, th padding or height, td padding or height, 
+    tr:hover change background
+    tr:nth-child(even / odd) {background-color: #f2f2f2;}
+    responsive table:
+    <div style="overflow-x:auto;">
+        <table>
+        ... table content ...
+        </table>
+    </div>
+    rowspan, colspan
+
+    21. Display
+    display: block, inline, inline-block, none, flex
+    visibility: hidden, visible
+
+    22. Position
+    The position property specifies the type of positioning method used for an element.
+
+    There are five different position values:
+    static
+    relative
+    fixed
+    absolute
+    sticky
+
+    23. Overflow
+    Note: The overflow property only works for block elements with a specified height.
+
+    visible - Default. The overflow is not clipped. The content renders outside the element's box.
+    hidden - The overflow is clipped, and the rest of the content will be invisible.
+    scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content.
+    auto - Similar to scroll, but it adds scrollbars only when necessary.
+
+    All CSS Positioning Properties:
+    bottom	Sets the bottom margin edge for a positioned box
+    clip -	Clips an absolutely positioned element
+    left -	Sets the left margin edge for a positioned box
+    position -	Specifies the type of positioning for an element
+    right -	Sets the right margin edge for a positioned box
+    top - Sets the top margin edge for a positioned box
+    z-index - Sets the stack order of an element
+
+    24. Float and Clear
+    The float property is used for positioning and formatting content.
+    left - The element floats to the left of its container
+    right - The element floats to the right of its container
+    none - The element does not float (will be displayed just where it occurs in the text). This is default
+    inherit - The element inherits the float value of its parent
+
+    Float and Clear example #1:
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+        .box {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+        }
+        .clearfixa::after {
+        content: "";
+        clear: both;
+        display: block;
+        }
+        </style>
+        </head>
+        <body>
+        <h2>Grid of Boxes</h2>
+        <p>Float boxes side by side:</p>
+        <div class="clearfixa">
+        <div class="box" style="background-color:#bbb">
+        <p>Some text inside the box.</p>
+        </div>
+        <div class="box" style="background-color:#ccc">
+        <p>Some text inside the box.</p>
+        </div>
+        <div class="box" style="background-color:#ddd">
+        <p>Some text inside the box.</p>
+        </div>
+        </div>
+        <p>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+        </body>
+
+        Float and Clear example #2:
+        <style>
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+            li {
+            float: left;
+            }
+            li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            li a:hover {
+            background-color: #111;
+            }
+            .active {
+            background-color: red;
+            }
+            </style>
+            </head>
+            <body>
+            <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            </ul>
+        </body>
+
+        Float and Clear example #3:
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            .header, .footer {
+            background-color: grey;
+            color: white;
+            padding: 15px;
+            }
+            .column {
+            float: left;
+            padding: 15px;
+            }
+            .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            .menu {
+            width: 25%;
+            }
+            .content {
+            width: 75%;
+            }
+            .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            }
+            .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            }
+            .menu li:hover {
+            background-color: #0099cc;
+            }
+            </style>
+            </head>
+            <body>
+            <div class="header">
+            <h1>Chania</h1>
+            </div>
+            <div class="clearfix">
+            <div class="column menu">
+                <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+                </ul>
+            </div>
+            <div class="column content">
+                <h1>The City</h1>
+                <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+                <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+            </div>
+            </div>
+            <div class="footer">
+            <p>Footer Text</p>
+            </div>
+            </body>
+
+    25. CSS Selectors
+    CSS selectors are used to "find" (or select) the HTML elements you want to style. 
+
+    We can divide CSS selectors into five categories:
+    a) Simple selectors (select elements based on name, id, class)
+    b) Combinator selectors (select elements based on a specific relationship between them)
+    c) Attribute selectors (select elements based on an attribute or attribute value)
+    d) Pseudo-class selectors (select elements based on a certain state)
+    e) Pseudo-elements selectors (select and style a part of an element)
+
+    a) Simple selectors
+    Selector	Example	         Example description
+    .class         .intro              Selects all elements with class="intro"
+    #id            #firstname      Selects the element with id="firstname"
+    *                *                     Universal selector. Selects all elements
+    element     p                     Selects all <p> elements
+    ele,ele     div, p                Selects all <div> elements and all <p> elements
+    Note: An id name and class name cannot start with a number!
+
+    b) CSS Combinators
+    A combinator is something that explains the relationship between the selectors.
+    There are four different combinators in CSS:
+    b1) descendant selector (space) - The descendant selector matches all elements that are descendants of a specified element.
+    b2) child selector (>) - The child selector selects all elements that are the children of a specified element.
+    b3) adjacent sibling selector (+) - The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element. Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+    b4) general sibling selector (~) - The general sibling selector selects all elements that are siblings of a specified element.
+
+    c) CSS Attribute Selectors
+    The [attribute] selector is used to select elements with a specified attribute.
+
+    a[target]{} - 
+    Selects all elements with a target attribute
+
+    a[target="_blank"]{} - 
+    Selects all elements with target="_blank"
+
+    [title~="flower"] - 
+    Selects all elements with a title attribute containing the word "flower"
+
+    [class|="top"] - 
+    selects all elements with a class attribute value that begins with "top"
+
+    [class^="top"] - 
+    selects all elements with a class attribute value that begins with "top"
+
+    [class$="test"] - 
+    selects all elements with a class attribute value that ends with "test"
+
+    [class*="te"] - 
+    selects all elements with a class attribute value that contains "te"
+
+    input[type="text"], input[type="button"] - styling forms
+
+    c) CSS Pseudo-classes
+    A pseudo-class is used to define a special state of an element.
+    Style an element when a user mouses over it
+    Style visited and unvisited links differently
+    Style an element when it gets focus
+
+    c1) Anchor Pseudo-classes
+    Links can be displayed in different ways.
+
+    /* unvisited link */
+    a:link {color: #FF0000;}
+
+    /* visited link */
+    a:visited {color: #00FF00;}
+
+    /* mouse over link */
+    a:hover {color: #FF00FF;}
+
+    /* selected link */
+    a:active {color: #0000FF;}
+
+    Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+    c2) CSS Pseudo Classes
+    :first-child
+    :nth-child(5)
+    :last-child
+    More classes: https://www.w3schools.com/css/css_pseudo_classes.asp
+
+    d) CSS Pseudo Elements
+    ::after
+    The ::after selector inserts something after the content of each selected element(s).
+    Use the "content" property to specify the content to insert.
+    
+    ::before
+    The ::before selector inserts something before the content of each selected element(s).
+    Use the content property to specify the content to insert.
+
+    ::first-letter
+    Note: The following properties can be used with ::first-letter: 
+    font properties
+    color properties
+    background properties
+    margin properties
+    padding properties
+    border properties
+    text-decoration
+    vertical-align (only if float is 'none')
+    text-transform
+    line-height
+    float
+    clear
+    Note: The ::first-letter selector can only be used with block-level elements.
+
+    ::first-line
+    Note: The following properties can be used with ::first-line: 
+    font properties
+    color properties
+    background properties
+    word-spacing
+    letter-spacing
+    text-decoration
+    vertical-align
+    text-transform
+    line-height
+    clear
+    Note: The ::first-line selector can only be used with block-level elements.
+
+    ::selection
+    The ::selection selector matches the portion of an element that is selected by a user.
+    Only a few CSS properties can be applied to the ::selection selector: color, background, cursor, and outline.
+
+    26. Opacity
+    img {opacity: 0.5;}
+    img:hover {opacity: 1.0;}
+
+    Instead of opacity you can use background rgba also for transparency:
+    background: rgba(76, 175, 80, 0.3)
+
+    27. CSS Counters
+    CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).
+
+    To work with CSS counters we will use the following properties:
+
+    counter-reset - Creates or resets a counter
+    counter-increment - Increments a counter value
+    content - Inserts generated content
+    counter() or counters() function - Adds the value of a counter to an element
+    To use a CSS counter, it must first be created with counter-reset.
+
+    The following example creates a counter for the page (in the body selector), then increments the counter value for each <h2> element and adds "Section <value of the counter>:" to the beginning of each <h2> element:
+
+        Counter ex1 :
+        <!DOCTYPE html>
+            <html>
+            <head>
+            <style>
+            body {
+            counter-reset: section;
+            }
+
+            h2::before {
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+            }
+            </style>
+            </head>
+            <body>
+
+            <h1>Using CSS Counters:</h1>
+            <h2>HTML Tutorial</h2>
+            <h2>CSS Tutorial</h2>
+            <h2>JavaScript Tutorial</h2>
+
+            </body>
+            </html>
+
+            Counter ex2 :
+            <!DOCTYPE html>
+                <html>
+                <head>
+                <style>
+                body {
+                counter-reset: section;
+                }
+
+                h1 {
+                counter-reset: subsection;
+                }
+
+                h1::before {
+                counter-increment: section;
+                content: "Section " counter(section) ". ";
+                }
+
+                h2::before {
+                counter-increment: subsection;
+                content: counter(section) "." counter(subsection) " ";
+                }
+                </style>
+                </head>
+                <body>
+
+
+                <h1>HTML tutorials:</h1>
+                <h2>HTML Tutorial</h2>
+                <h2>CSS Tutorial</h2>
+
+                <h1>Scripting tutorials:</h1>
+                <h2>JavaScript</h2>
+                <h2>VBScript</h2>
+
+                <h1>XML tutorials:</h1>
+                <h2>XML</h2>
+                <h2>XSL</h2>
+
+                </body>
+                </html>
+
+            Counter ex3 :
+            <!DOCTYPE html>
+                <html>
+                <head>
+                <style>
+                ol {
+                counter-reset: section;
+                list-style-type: none;
+                }
+
+                li::before {
+                counter-increment: section;
+                content: counters(section,".") " ";
+                }
+                </style>
+                </head>
+                <body>
+
+                <ol>
+                <li>item</li>
+                <li>item   
+                <ol>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item
+                    <ol>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    </ol>
+                    </li>
+                    <li>item</li>
+                </ol>
+                </li>
+                <li>item</li>
+                <li>item</li>
+                </ol>
+
+                <ol>
+                <li>item</li>
+                <li>item</li>
+                </ol>
+
+                </body>
+                </html>
+
+    28. CSS Specificity
+    Situation 1:
+    h1 {background-color: yellow;}
+    h1 {background-color: red;} - this will apply
+
+    Situation 2:
+    div#a {background-color: green;} - this will apply
+    #a {background-color: yellow;}
+    div[id=a] {background-color: blue;}
+    ID selectors have a higher specificity than attribute selectors
+
+    Situation 3:
+    From external CSS file:
+    #content h1 {background-color: red;}
+
+    In HTML file:
+    <style>
+    #content h1 {
+    background-color: yellow;
+    }
+    </style>
+
+    Situation 4:
+    .intro {background-color: yellow;} - this will apply
+    h1 {background-color: red;}
+    A class selector beats any number of element selectors - a class selector such as .intro beats h1, p, div, etc:
+
+    29. Border Radius
+    border-radius - A shorthand property for setting all the four border-*-*-radius properties
+    border-top-left-radius - Defines the shape of the border of the top-left corner
+    border-top-right-radius - Defines the shape of the border of the top-right corner
+    border-bottom-right-radius - Defines the shape of the border of the bottom-right corner
+    border-bottom-left-radius - Defines the shape of the border of the bottom-left corner
+
+    30. Box Shadow
+    box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+
+ -->
