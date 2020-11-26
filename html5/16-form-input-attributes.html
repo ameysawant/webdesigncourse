@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Kishori Tutorials teach frontend languages." />
+    <meta name="keywords" content="Html5, Css3, Javascript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Form Input Attributes</title>
+</head>
+
+<body>
+    <!-- 
+        An HTML form is used to collect user input.The user input is most often sent to a server for processing.
+
+        Form Tags -
+        form
+        input
+        label
+        textarea
+        select
+        option
+        optgroup
+        datalist
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        button
+        fieldset
+        legend        
+
+        Input Types -
+        text
+        checkbox
+        radio
+        date
+        email
+        file
+        number
+        password        
+        range
+        color        
+        datetime-local        
+        hidden        
+        month
+        reset
+        search
+        tel
+        time
+        url
+        week
+        submit
+        button
+        image
+        
+
+        Input Attributes -
+        id - id attribute to manipulate text with JavaScript and with css too
+        for - To associate the <label> with an <input> element
+        value - With value attribute we can fetch the value from database using PHP or any server-side programming language.
+        name - With name attribute we send the input value in the database or we can hold the input value using JavaScript.
+        size - specifies the visible width - text email select
+        multiple - select file
+        accept - video audio image - file
+        maxlength - text textarea
+        min max   -  number date
+        placeholder - text number email textarea
+        step - number range        
+        list - 	Specifies the id of the datalist to bind the <input>
+        cols - textarea
+        rows - textarea
+        readonly - text
+        disabled - text radio checkbox button textarea
+        required - email number text
+        height - input textarea
+        width - input textarea
+     -->
+
+     <form>
+
+        <label>Select Food</label>
+        <br>
+        <label for="biryani">
+            Biryani
+        </label>
+        <input type="checkbox" id="biryani">
+
+        <br><br>
+
+        <label for="one">First Name</label>
+        <input type="text" id="one" value="" name="name" required>
+
+        <br><br>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" size="50" required>
+
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" size="50" required>
+
+        <br><br>
+
+        <label>Select Cars</label>
+        <select size="5" multiple>
+            <option value="">Alto</option>
+            <option value="">Tiago</option>
+            <option value="">Other</option>
+            <option value="">Other</option>
+            <option value="">Other</option>
+        </select>
+
+        <br><br>
+
+        <label>upload</label>
+        <input type="file" multiple>
+
+        <br><br>
+
+        <label>upload multiple</label>
+        <input type="file" accept=".jpg">
+
+        <br><br>
+
+        <label>Full Name</label>
+        <input type="text" maxlength="5" readonly>
+
+        <br><br>
+
+        <label>Message</label>
+        <textarea maxlength="5"></textarea>
+
+        <br><br>
+
+        <label>Number</label>
+        <input type="number" min="5" max="10">
+
+        <br><br>
+
+        <label>date</label>
+        <input type="date" min="1979-12-31">
+
+        <br><br>
+
+        <label>date</label>
+        <input type="date" max="2000-01-01">
+
+        <br><br>
+
+        <!-- <label>Company Name</label> -->
+        <input type="text" placeholder="company name">
+
+        <!-- <label>Company Name</label> -->
+        <input type="email" placeholder="email">
+
+        <br><br>
+
+        <label>starting price</label>
+        <input type="range" step="50">
+
+        <br><br>
+
+        <label>num</label>
+        <input type="number" step="20">
+
+        <br><br>
+
+        
+        <input list="abc">
+        <datalist id="abc">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <br><br>
+
+        <label>Message 2</label>
+        <textarea height="5000"></textarea>
+
+        <br><br><br><br>
+
+        <input type="submit" value="Send Form">
+
+        <!-- <input type="image" src="images/logo.jpg" width="50" height="50" value="Send Form"> -->
+
+     </form>
+
+
+</body>
+
+</html>

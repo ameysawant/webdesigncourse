@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Kishori Tutorials teach frontend languages." />
+    <meta name="keywords" content="Html5, Css3, Javascript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Table</title>
+    <style>
+        table, th, td{
+            border:1px solid black;
+            border-collapse: collapse;
+            padding:8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        To make a cell span more than one column, use the colspan attribute:
+        To make a cell span more than one row, use the rowspan attribute:
+     -->
+
+     <table>
+         <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="3">Details</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td>Kishori Tutorials</td>
+                <td>Mumbai, phone: 89898989</td>
+                <td>email : email@gmail.com</td>
+            </tr>
+         </tbody>
+     </table>
+
+     <br /><br />
+
+     <table>
+         <tr>
+             <th>Name</th>
+             <td>Kishori Tutorials</td>
+         </tr>
+         <tr>
+             <th rowspan="2">Details</th>
+             <td>Mumbai, phone: 89898989</td>
+         </tr>
+         <tr>
+             <td>email: email@gmail.com</td>
+         </tr>
+     </table>
+
+
+</body>
+
+</html>

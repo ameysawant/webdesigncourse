@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Kishori Tutorials teach frontend languages." />
+    <meta name="keywords" content="Html5, Css3, Javascript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Image Map</title>
+</head>
+
+<body>
+    <!-- 
+
+        <map>	Defines an image map
+        <area>	Defines a clickable area inside an image map
+
+        usemap
+        area shape rect circle poly default  coords - alt href target title
+
+        https://www.image-map.net/
+     -->
+
+     <!-- <a href="https://www.google.com/">
+        <img src="images/kishoritutorials.jpg" alt="" />
+     </a> -->
+
+     <img src="images/kishoritutorials.jpg" alt="" usemap="#myImage">
+
+     <map name="myImage">
+        <area shape="circle" coords="78,187,57" alt="" href="https://www.google.com/" target="_blank" title="Html" />
+
+        <area shape="circle" coords="201,187,57" alt="" href="https://www.youtube.com/" target="_blank" title="Css" />
+
+        <area shape="circle" coords="322,186,56" alt="" href="https://www.youtube.com/" target="_blank" title="ES6" />
+
+        <area shape="rect" coords="22,29,375,74" alt="" href="https://www.youtube.com/" target="_blank" title="ES6" />
+     </map>
+
+</body>
+
+</html>

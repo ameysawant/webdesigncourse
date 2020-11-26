@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Kishori Tutorials teach frontend languages." />
+    <meta name="keywords" content="Html5, Css3, Javascript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Multimedia</title>
+</head>
+
+<body>
+    <!-- 
+        video, audio, youtube embed
+
+        video:
+        width height autoplay controls source loop muted poster src type="video/mp4"
+                preload : 
+        none: Indicates that the video should not be preloaded.
+        metadata: Indicates that only video metadata (e.g. length) is fetched.
+        auto: Indicates that the whole video file can be downloaded, even if the user is not expected to use it.
+
+        audio:
+        autoplay controls source loop muted preload type="audio/mpeg"
+                preload : 
+        none: Indicates that the audio should not be preloaded.
+        metadata: Indicates that only audio metadata (e.g. length) is fetched.
+        auto: Indicates that the whole audio file can be downloaded, even if the user is not expected to use it.
+        
+        Note: Only MP4, WebM, and Ogg video are supported by the HTML standard.
+        Note: The autoplay attribute does not work in mobile devices like iPad and iPhone.
+
+     -->
+
+        <video width="500" controls muted loop preload="metadata">
+            <source src="video.mp4" type="video/mp4" />
+        </video>
+
+        <audio controls muted loop>
+            <source src="audio.mp3" />
+        </audio>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oaehssqGESk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+
+</html>
