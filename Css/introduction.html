@@ -22,25 +22,6 @@
     c. External external
     Note: An inline style has the highest priority, and will override external and internal styles and browser defaults.
 
-    d). Multiple Style Sheets priority
-    <head>
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
-        <link rel="stylesheet" type="text/css" href="mystyle2.css">
-        <style>
-        h1 {
-        color: orange;
-        }
-        </style>
-    </head>
-
-    e) Cascading Order
-    What style will be used when there is more than one style specified for an HTML element?
-    All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
-    e1) Inline style (inside an HTML element)
-    e2) External and internal style sheets (in the head section)
-    e3) Browser default style
-    So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
-
 
 
     5. CSS Comments
@@ -51,58 +32,88 @@
 
 
     6. CSS Colors Values
-    Colors are specified using predefined color names like orange, tomato, Violet, etc., or RGB - rgb(255, 99, 71),
+    Colors are specified using predefined color names like orange, tomato, Violet, etc., or 
+    RGB - rgb(255, 99, 71)
     RGBA - rgba(255, 99, 71, 0.5)
-    HEX - #ff6347,
-    HSL, HSLA values.
+    HEX - #ff6347
+    HSL, HSLA values
 
 
+    
+    7. CSS Selectors
+    CSS selectors are used to "find" (or select) the HTML elements you want to style. 
 
-    7. Backgrounds
+    We can divide CSS selectors into five categories:
+    a) Simple selectors (select elements based on name, id, class)
+    b) Combinator selectors (select elements based on a specific relationship between them)
+    c) Attribute selectors (select elements based on an attribute or attribute value)
+    d) Pseudo-class selectors (select elements based on a certain state)
+    e) Pseudo-elements selectors (select and style a part of an element)
+
+
+    
+    8. Backgrounds
     background-color - "red" "#ff0000" "rgb(255,0,0)"
-    background-image: url("paper.gif");
+    background-image: url("something.gif");
     background-repeat: repeat-x; (repeat-x repeat-y no-repeat)
     background-position (xpos, ypos)
     background-attachment: (scroll | fixed)
     background-size: (cover |100% | contain)
     shorthand property for backgrounds:
-    background: #ffffff url("img_tree.png") no-repeat right top;
-
-    7a. Gradients - Liner and Radial
+    background: #ffffff url("something.png") no-repeat right top;
 
 
-
-    8. Borders
-    border: border-width border-style border-color;
-    border-top, border-right border-bottom border-left
-
-    
 
     9. Margins
     margin, margin-top, margin-right, margin-bottom, margin-left
-    Tip: Negative values are allowed.
-          You can give values in px, %, rem, etc.
     margin: 25px 50px 75px 100px; - trbl
     margin: 25px 50px 75px; - t rl b
     margin: 25px 50px; - tb rl
     margin: 25px; - all four
     margin: auto;
+    Tip: Negative values are allowed.
+    You can give values in px, %, rem, etc.
 
 
 
     10. Padding
     padding, padding-top, padding-right, padding-bottom, padding-left
-    Tip: Negative values are not allowed.
-           You can give values in px, %, rem, etc.
     padding: 25px 50px 75px 100px; - trbl
     padding: 25px 50px 75px; - t rl b
     padding: 25px 50px; - tb rl
     padding: 25px; - all four
     padding: auto;
+    Tip: Negative values are not allowed.
+    You can give values in px, %, rem, etc.
 
 
 
-    11. Height and Width
+    11. Borders
+    border: border-width border-style border-color;
+    border-top, border-right border-bottom border-left
+
+
+
+    12. Box Model
+    The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+    Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+
+
+
+    13. Box-Sizing
+    By default, the width and height of an element is calculated like this:
+    width + padding + border = actual width of an element
+    height + padding + border = actual height of an element
+    The box-sizing property allows us to include the padding and border in an element's total width and height. Remember this does not include margin.
+
+
+
+    14. Gradients
+    CSS defines two types of gradients: - Liner and Radial
+
+
+
+    15. Height and Width
     The height and width properties are used to set the height and width of an element.
     The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
     Tip: You can give values in auto, %, px, rem, none, etc.
@@ -133,21 +144,7 @@
 
 
 
-    12. Box Model
-    The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
-    Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
-
-
-
-    13. Box-Sizing
-    By default, the width and height of an element is calculated like this:
-    width + padding + border = actual width of an element
-    height + padding + border = actual height of an element
-    The box-sizing property allows us to include the padding and border in an element's total width and height. Remember this does not include margin.
-
-
-
-    14. Outline
+    16. Outline
     outline-style
     outline-color
     outline-width
@@ -173,7 +170,7 @@
 
 
 
-    15. Text
+    17. Text
     color:red;
 
     text-align: left right center justify
@@ -192,7 +189,7 @@
 
 
 
-    16. Fonts
+    18. Fonts
     The CSS font properties define the font family, boldness, size, and the style of a text.
     Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
 
@@ -222,13 +219,13 @@
 
 
 
-    17. Icons
+    19. Icons
     https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
 
 
-    18. Links
+    20. Links
     a:link - a normal, unvisited link
     a:visited - a link the user has visited
     a:hover - a link when the user mouses over it
@@ -258,7 +255,7 @@
 
 
 
-    19. List
+    21. List
     In HTML, there are two main types of lists:
     unordered lists (<ul>) - the list items are marked with bullets
     ordered lists (<ol>) - the list items are marked with numbers or letters
@@ -270,7 +267,7 @@
 
 
 
-    20. Tables
+    22. Tables
     The look of an HTML table can be greatly improved with CSS
     table, th, td {border: 1px solid black;}
     table {width: 100%; border-collapse: collapse;}
@@ -287,13 +284,13 @@
 
 
 
-    21. Display
+    23. Display
     display: block, inline, inline-block, none, flex
     visibility: hidden, visible
 
 
 
-    22. Position
+    24. Position
     The position property specifies the type of positioning method used for an element.
 
     There are five different position values:
@@ -305,7 +302,7 @@
 
 
 
-    23. Overflow
+    25. Overflow
     Note: The overflow property only works for block elements with a specified height.
 
     visible - Default. The overflow is not clipped. The content renders outside the element's box.
@@ -324,7 +321,7 @@
 
 
 
-    24. Float and Clear
+    26. Float and Clear
     The float property is used for positioning and formatting content.
     left - The element floats to the left of its container
     right - The element floats to the right of its container
@@ -468,7 +465,7 @@
 
 
 
-    25. CSS Selectors
+    27. CSS Selectors
     CSS selectors are used to "find" (or select) the HTML elements you want to style. 
 
     We can divide CSS selectors into five categories:
@@ -595,7 +592,7 @@
 
 
 
-    26. Opacity
+    29. Opacity
     img {opacity: 0.5;}
     img:hover {opacity: 1.0;}
 
@@ -604,7 +601,7 @@
 
 
 
-    27. CSS Counters
+    30. CSS Counters
     CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).
 
     To work with CSS counters we will use the following properties:
@@ -732,7 +729,7 @@
 
 
 
-    28. Border Radius
+    31. Border Radius
     border-radius - A shorthand property for setting all the four border-*-*-radius properties
     border-top-left-radius - Defines the shape of the border of the top-left corner
     border-top-right-radius - Defines the shape of the border of the top-right corner
@@ -741,24 +738,27 @@
 
 
 
-    29. Box Shadow
+    32. Box Shadow
     box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
 
 
 
-    30. CSS object-fit Property
+    33. CSS object-fit Property
 
 
 
-    31. CSS Variables
+    34. CSS Variables
 
 
 
-    32. CSS Units
+    35. CSS Units
+
+
+    36. !important
 
     
 
-    33. CSS Specificity
+    37. CSS Specificity
     Situation 1:
     h1 {background-color: yellow;}
     h1 {background-color: red;} - this will apply
@@ -785,4 +785,5 @@
     h1 {background-color: red;}
     A class selector beats any number of element selectors - a class selector such as .intro beats h1, p, div, etc:
 
+    38. Css compatibility
  -->

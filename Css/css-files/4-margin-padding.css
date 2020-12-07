@@ -1,0 +1,34 @@
+.bgColor {
+  background-color: olive;
+
+  /* margin-top: 100px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  margin-left: 50px; */
+
+  /*top right bottom left - trbl*/
+  /* margin: 100px 50px 100px 50px; */
+
+  /*top right-left bottom - t rl b*/
+  /* margin: 100px 150px 100px; */
+
+  /*top-bottom right-left - tb rl*/
+  /* margin: 100px 20px; */
+
+  /*trbl*/
+  margin: 0 auto;
+  width: 500px;
+
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  /* padding: 30px 30px 30px 30px;
+
+  padding: 30px 30px 30px;
+
+  padding: 30px 30px;
+
+  padding: 30px; */
+}

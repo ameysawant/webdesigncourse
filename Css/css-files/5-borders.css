@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  background-color: olive;
+  padding: 30px;
+  width: 500px;
+  margin: 100px auto;
+
+  /* border-style: dotted;
+  border-width: 15px;
+  border-color: red; */
+
+  /* border: dotted 15px red; */
+
+  /* border-top-style: dotted;
+  border-top-width: 15px;
+  border-top-color: red; */
+
+  border-left: dashed 15px red;
+  border-right: dotted 15px red;
+}
+.column h1 {
+  margin-bottom: 15px;
+}
