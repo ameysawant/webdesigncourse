@@ -1,0 +1,9 @@
+.box1 {
+  background-color: orange;
+  /* width: 800px; */
+  /* min-width: 800px; */
+  width: 500px;
+  /* height: 400px; */
+  /* max-height: 400px; */
+  /* min-height: 400px; */
+}

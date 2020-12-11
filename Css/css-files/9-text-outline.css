@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  background-color: lightblue;
+  padding: 30px;
+  margin: 0 auto 30px auto;
+  width: 500px;
+}
+
+.color p {
+  color: red;
+}
+
+.text-align {
+  text-align: justify;
+}
+
+.vertical-align img {
+  vertical-align: middle;
+}
+
+.text-decoration p {
+  text-decoration: line-through;
+}
+
+.text-transform p {
+  text-transform: lowercase;
+}
+
+.text-indent p {
+  text-indent: 50px;
+}
+
+.letter-spacing p {
+  letter-spacing: 15px;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+
+.word-spacing {
+  word-spacing: 15px;
+}
+
+.white-space {
+  white-space: pre;
+}
+
+.text-shadow h2 {
+  text-shadow: 5px 5px 3px black;
+}
+
+.outline {
+  /* outline-style: dashed;
+  outline-width: 15px;
+  outline-color: red; */
+  outline-offset: 20px;
+  outline: 15px dashed red;
+}

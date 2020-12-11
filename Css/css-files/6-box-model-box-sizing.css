@@ -1,28 +1,19 @@
 * {
-  box-sizing: border-box;
-}
-.box1 {
-  background-color: lightcoral;
-  width: 300px;
-  height: 300px;
-  padding: 15px;
-  border: 15px solid red;
-  margin-top: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.box2 {
-  background-color: lightcoral;
-  width: 300px;
-  height: 300px;
-  padding: 15px;
+.column1 {
+  background-color: lightblue;
+  padding: 30px 30px 30px 30px;
+  margin: 30px 30px 10px 30px;
   border: 15px solid red;
-  margin-top: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  box-sizing: border-box;
+  width: 300px;
+}
+.column2 {
+  background-color: lightblue;
+  padding: 30px 30px 30px 30px;
+  margin: 10px 30px 30px 30px;
+  border: 15px solid red;
+  width: 300px;
 }

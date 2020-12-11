@@ -1,10 +1,4 @@
 .bg {
-  background-image: repeating-linear-gradient(
-    90deg,
-    red,
-    yellow,
-    green,
-    orange,
-    yellow 50%
-  );
+  /* background-image: repeating-linear-gradient(red 10%, green 20%); */
+  background-image: repeating-radial-gradient(circle, red 10%, blue 20%);
 }

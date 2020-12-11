@@ -109,7 +109,7 @@
 
 
     14. Gradients
-    CSS defines two types of gradients: - Liner and Radial
+    CSS defines two types of gradients: - Linear and Radial
 
 
 
@@ -151,8 +151,8 @@
     outline-offset
     outline   
     
-    outline-style: dotted;
-    outline-width: thin;
+    outline-style: dotted dashed groove;
+    outline-width: thin medium, thick, 15px;
     outline-color: red;
     outline: 1px solid red;
     outline-offset: 25px;
@@ -175,26 +175,27 @@
 
     text-align: left right center justify
 
-    vertical-align: top middle bottom
-    <p>An <img class="top" src="w3schools_logo.gif" alt="W3Schools" width="270" height="50"> image with a top alignment.</p><br>
+    vertical-align:  baseline is default, top middle bottom text-top text-bottom super sub
+    <p>An <img class="top" src="" alt="" width="270" height="50"> image with a top alignment.</p><br>
 
     text-decoration: underline, overline, line-through, none;
     text-transform: uppercase, lowercase, capitalize;
     text-indent 50px;
     letter-spacing: 3px;
-    line-height: 1.8;
+    line-height: 1.5; px rem, %, unitless em
     word-spacing: 100px;
-    white-space: nowrap;
+    white-space: nowrap, wrap, normal, pre
     text-shadow: h-shadow v-shadow blur-radius color;
 
 
 
     18. Fonts
+    Advantage: great reading experience
     The CSS font properties define the font family, boldness, size, and the style of a text.
     Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
 
     font-family: "Times New Roman", Times, serif;
-    font-style: normal italic oblique bold;
+    font-style: normal italic;
     font-variant: normal small-caps;
     font-size: 40px 4rem, 20%;
 
@@ -211,7 +212,8 @@
     font-family: myFirstFont;
     src: url(sansation_light.ttf);
     }
-    Browser Support for Font Formats
+
+    Browser Support for Font Formats like TTF OTF WOFF EOT
     https://www.w3schools.com/css/css3_fonts.asp
     
     Google Fonts
@@ -220,14 +222,28 @@
 
 
     19. Icons
-    https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    Fontawesome 4.7.0 cdn link
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+    
+    Fontawesome 4.7.0 Offline download: 
+    https://fontawesome.com/v4.7.0/get-started/
+
+    Fontawesome 5.15.1 cdn link:
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css
+    
+    Fontawesome 5.15.1 Offline download:
+    https://fontawesome.com/download
+
+    Fontawesome All Version links: 
+    https://cdnjs.com/libraries/font-awesome
 
 
 
     20. Links
-    a:link - a normal, unvisited link
-    a:visited - a link the user has visited
+    Links has four different states: a:link, a:visited, a:hover, a:active
+
+    a:link - unvisited link
+    a:visited - visited link
     a:hover - a link when the user mouses over it
     a:active - a link the moment it is clicked
     Note: a:hover MUST come after a:link and a:visited
