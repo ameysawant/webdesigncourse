@@ -1,11 +1,11 @@
 @font-face {
-  font-family: cadman-bold;
-  src: url(/fonts/cadman/cadman-bold.otf);
+  font-family: CadmanRoman;
+  src: url(/fonts/cadman/cadman-roman.otf);
 }
 
 @font-face {
-  font-family: cadman-roman;
-  src: url(/fonts/cadman/cadman-roman.otf);
+  font-family: CadmanBold;
+  src: url(/fonts/cadman/cadman-bold.otf);
 }
 
 * {
@@ -14,23 +14,26 @@
   box-sizing: border-box;
 }
 
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: CadmanRoman; */
+  font-family: "Sofia", cursive;
+}
+
 .column {
   background-color: lightblue;
   padding: 30px;
-  float: left;
   width: 33.33%;
-  /* font-family: cadman-bold; */
-  font-family: "Calligraffitti", cursive;
+  float: left;
 }
-/* .column h2 {
-  font-family: Arial, Helvetica, sans-serif;
-} */
-/* .column p {
-  /* font-style: italic;
-  font-weight: 200;
-  font-variant: small-caps;
-  font-size: 18px;
-  line-height: 30px; 
 
-  font: italic small-caps bold 18px/30px Georgia, serif;
-} */
+.column p {
+  /* font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 900;
+  font-variant: normal;
+  line-height: 30px;
+  font-size: 16px; */
+  /* font: italic normal 900 16px/30px "Times New Roman", Times, serif; */
+  /* font-family: CadmanBold; */
+}

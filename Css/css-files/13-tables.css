@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: right;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table th,
+table td {
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+tr:nth-child(odd) {
+  background-color: #ccc;
+}

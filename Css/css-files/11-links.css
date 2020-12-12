@@ -1,0 +1,38 @@
+a:link {
+  color: yellow;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: red;
+}
+
+.btn1 {
+  background-color: lightblue;
+  text-decoration: none;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: not-allowed;
+}
+.btn1:hover {
+  background-color: red;
+  color: white;
+}
+
+.btn2 {
+  background-color: lightcoral;
+  text-decoration: none;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
