@@ -1,13 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 table {
   border-collapse: collapse;
   width: 100%;
-  text-align: right;
 }
 table,
 th,
@@ -16,11 +9,24 @@ td {
 }
 table th,
 table td {
+  /* height: 70px; */
   padding: 6px 12px;
   text-align: center;
   vertical-align: middle;
 }
+/* table tr:hover {
+  background-color: orange;
+  color: white;
+} */
 
-tr:nth-child(odd) {
-  background-color: #ccc;
+table tr:nth-child(even) {
+  background-color: orchid;
+}
+
+table tr:nth-child(odd) {
+  background-color: olive;
+}
+
+.responsive {
+  overflow-x: auto;
 }
