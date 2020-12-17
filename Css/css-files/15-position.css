@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  padding-top: 78px;
+} */
+
+div {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+.wrapper,
+.menu {
+  width: 100%;
+  padding: 0;
+}
+
+.menu {
+  background-color: orange;
+  padding: 30px 15px;
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.column1 {
+  background-color: lightblue;
+}
+.column1 h2 {
+  background-color: white;
+  display: inline-block;
+}
+.column1 a {
+  display: inline;
+  padding: 15px;
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.column2 {
+  background-color: lightcoral;
+}
+
+.column2 input {
+  width: 100%;
+  padding: 13px 15px;
+}
+
+.column2 button {
+  border: none;
+  padding: 15px;
+  background-color: olive;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.column2 .parent {
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+.column3 {
+  background-color: lightgreen;
+}

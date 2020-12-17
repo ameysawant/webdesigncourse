@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+.column1 {
+  background-color: lightblue;
+}
+.column1 h2 {
+  background-color: white;
+  display: inline-block;
+}
+.column1 a {
+  display: inline;
+  padding: 15px;
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.column2 {
+  background-color: lightcoral;
+}
+.column2 button {
+  display: none;
+  /* visibility: hidden; */
+}
+
+.column3 {
+  background-color: lightgreen;
+}

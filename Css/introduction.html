@@ -295,7 +295,7 @@
 
 
     23. Display
-    display: block, inline, inline-block, none, flex
+    display: block, inline, inline-block, none, flex, grid
     visibility: hidden, visible
 
 
@@ -309,25 +309,11 @@
     fixed
     absolute
     sticky
+    top, left, right, bottom, z-index
 
 
 
-    25. Overflow
-    Note: The overflow property only works for block elements with a specified height.
 
-    visible - Default. The overflow is not clipped. The content renders outside the element's box.
-    hidden - The overflow is clipped, and the rest of the content will be invisible.
-    scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content.
-    auto - Similar to scroll, but it adds scrollbars only when necessary.
-
-    All CSS Positioning Properties:
-    bottom	Sets the bottom margin edge for a positioned box
-    clip -	Clips an absolutely positioned element
-    left -	Sets the left margin edge for a positioned box
-    position -	Specifies the type of positioning for an element
-    right -	Sets the right margin edge for a positioned box
-    top - Sets the top margin edge for a positioned box
-    z-index - Sets the stack order of an element
 
 
 
@@ -337,141 +323,6 @@
     right - The element floats to the right of its container
     none - The element does not float (will be displayed just where it occurs in the text). This is default
     inherit - The element inherits the float value of its parent
-
-    Float and Clear example #1:
-    <style>
-        * {
-        box-sizing: border-box;
-        }
-        .box {
-        float: left;
-        width: 33.33%;
-        padding: 50px;
-        }
-        .clearfixa::after {
-        content: "";
-        clear: both;
-        display: block;
-        }
-        </style>
-        </head>
-        <body>
-        <h2>Grid of Boxes</h2>
-        <p>Float boxes side by side:</p>
-        <div class="clearfixa">
-        <div class="box" style="background-color:#bbb">
-        <p>Some text inside the box.</p>
-        </div>
-        <div class="box" style="background-color:#ccc">
-        <p>Some text inside the box.</p>
-        </div>
-        <div class="box" style="background-color:#ddd">
-        <p>Some text inside the box.</p>
-        </div>
-        </div>
-        <p>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
-        </body>
-
-        Float and Clear example #2:
-        <style>
-            ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            }
-            li {
-            float: left;
-            }
-            li a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-            li a:hover {
-            background-color: #111;
-            }
-            .active {
-            background-color: red;
-            }
-            </style>
-            </head>
-            <body>
-            <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            </ul>
-        </body>
-
-        Float and Clear example #3:
-        <style>
-            * {
-            box-sizing: border-box;
-            }
-            .header, .footer {
-            background-color: grey;
-            color: white;
-            padding: 15px;
-            }
-            .column {
-            float: left;
-            padding: 15px;
-            }
-            .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-            }
-            .menu {
-            width: 25%;
-            }
-            .content {
-            width: 75%;
-            }
-            .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            }
-            .menu li {
-            padding: 8px;
-            margin-bottom: 8px;
-            background-color: #33b5e5;
-            color: #ffffff;
-            }
-            .menu li:hover {
-            background-color: #0099cc;
-            }
-            </style>
-            </head>
-            <body>
-            <div class="header">
-            <h1>Chania</h1>
-            </div>
-            <div class="clearfix">
-            <div class="column menu">
-                <ul>
-                <li>The Flight</li>
-                <li>The City</li>
-                <li>The Island</li>
-                <li>The Food</li>
-                </ul>
-            </div>
-            <div class="column content">
-                <h1>The City</h1>
-                <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
-                <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
-            </div>
-            </div>
-            <div class="footer">
-            <p>Footer Text</p>
-            </div>
-            </body>
 
 
 
@@ -610,8 +461,40 @@
     background: rgba(76, 175, 80, 0.3)
 
 
+    
+    30. Border Radius
+    border-radius - A shorthand property for setting all the four border-*-*-radius properties
+    border-top-left-radius - Defines the shape of the border of the top-left corner
+    border-top-right-radius - Defines the shape of the border of the top-right corner
+    border-bottom-right-radius - Defines the shape of the border of the bottom-right corner
+    border-bottom-left-radius - Defines the shape of the border of the bottom-left corner
 
-    30. CSS Counters
+
+
+    31. Box Shadow
+    box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+
+
+
+    25. Overflow
+    Note: The overflow property only works for block elements with a specified height.
+
+    visible - Default. The overflow is not clipped. The content renders outside the element's box.
+    hidden - The overflow is clipped, and the rest of the content will be invisible.
+    scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content.
+    auto - Similar to scroll, but it adds scrollbars only when necessary.
+
+
+
+    32. !important
+
+
+
+    33. css calc() function
+
+
+
+    32. CSS Counters
     CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).
 
     To work with CSS counters we will use the following properties:
@@ -739,20 +622,6 @@
 
 
 
-    31. Border Radius
-    border-radius - A shorthand property for setting all the four border-*-*-radius properties
-    border-top-left-radius - Defines the shape of the border of the top-left corner
-    border-top-right-radius - Defines the shape of the border of the top-right corner
-    border-bottom-right-radius - Defines the shape of the border of the bottom-right corner
-    border-bottom-left-radius - Defines the shape of the border of the bottom-left corner
-
-
-
-    32. Box Shadow
-    box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
-
-
-
     33. CSS object-fit Property
 
 
@@ -762,9 +631,6 @@
 
 
     35. CSS Units
-
-
-    36. !important
 
     
 
