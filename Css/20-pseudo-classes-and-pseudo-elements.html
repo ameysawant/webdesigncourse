@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes, Pseudo Elements and Opacity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css-files/20-pseudo-classes-and-pseudo-elements-.css">
+</head>
+
+<body>
+
+    <!-- 
+            CSS selectors -
+            We can divide CSS selectors into five categories:
+            a) Simple selectors (select elements based on name, id, class)
+            b) Combinator selectors (select elements based on a specific relationship between them)
+            c) Attribute selectors (select elements based on an attribute or attribute value)
+            d) Pseudo-class selectors (select elements based on a certain state)
+            e) Pseudo-elements selectors (select and style a part of an element)
+
+            :checked
+            :disabled
+            :focus
+            :link
+            :visited
+            :active
+            :hover
+            :first-child
+            :last-child
+            :nth-child(2)
+            :nth-child(odd)
+            :nth-child(even)
+            ::after
+            ::before
+            ::first-letter
+            ::first-line
+            ::selection
+            ::placeholder
+            :required
+
+            opacity -
+            The opacity property specifies the opacity/transparency of an element.
+            The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent
+            NOTE: if you add opacity to a div with text inside then the text will also become transparent, to avoid this use rgba transparency
+     -->
+
+
+
+    <div class="container">
+        <div class="column box">
+            <img src="images/kishoritutorials.jpg" width="100%" alt="">
+            <h2>This is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti culpa, debitis vero, voluptates
+                architecto quam veritatis quis porro ipsa possimus, est illum. Distinctio, quasi.</p>
+            <a href="">REad More</a>
+            <button>Button</button>
+            <ul>
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+            </ul>
+        </div>
+        <div class="column">
+            <img src="images/kishoritutorials.jpg" width="100%" alt="">
+            <h2>This is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti culpa, debitis vero, voluptates
+                architecto quam veritatis quis porro ipsa possimus, est illum. Distinctio, quasi.</p>
+            <a href="">REad More</a>
+            <button>Button</button>
+            <ul>
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+            </ul>
+        </div>
+        <div class="column">
+            <img src="images/kishoritutorials.jpg" width="100%" alt="">
+            <h2>This is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti culpa, debitis vero, voluptates
+                architecto quam veritatis quis porro ipsa possimus, est illum. Distinctio, quasi.</p>
+            <a href="">REad More</a>
+            <button>Button</button>
+            <ul>
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+            </ul>
+        </div>
+        <div class="column">
+            <img src="images/kishoritutorials.jpg" width="100%" alt="">
+            <h2>This is heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti culpa, debitis vero, voluptates
+                architecto quam veritatis quis porro ipsa possimus, est illum. Distinctio, quasi.</p>
+            <a href="">REad More</a>
+            <button>Button</button>
+            <ul>
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <form action="">
+                <input type="text" placeholder="Full Name" disabled>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Message">
+                <label><input type="checkbox">Male</label>
+                <label><input type="checkbox">FeMale</label>
+                <button type="button">Send</button>
+                <button type="reset">REset</button>
+            </form>
+        </div>
+        <div class="column">
+            <form action="">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Message">
+                <label><input type="checkbox">Male</label>
+                <label><input type="checkbox">FeMale</label>
+                <button type="button">Send</button>
+                <button type="reset">REset</button>
+            </form>
+        </div>
+        <div class="column">
+            <form action="">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Message">
+                <label><input type="checkbox">Male</label>
+                <label><input type="checkbox">FeMale</label>
+                <button type="button">Send</button>
+                <button type="reset">REset</button>
+            </form>
+        </div>
+        <div class="column">
+            <form action="">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Message">
+                <label><input type="checkbox">Male</label>
+                <label><input type="checkbox">FeMale</label>
+                <button type="button">Send</button>
+                <button type="reset">REset</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

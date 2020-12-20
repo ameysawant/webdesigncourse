@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 30px;
+}
+
+.column p {
+  margin: 15px 0;
+}
+
+.column a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.column button {
+  padding: 10px;
+  background-color: lightcoral;
+  border: none;
+}
+
+.column input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.column input[type="checkbox"] {
+  width: auto;
+}
+
+.column ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.column ul li {
+  display: inline-block;
+}
+
+/* input[type="checkbox"]:checked {
+  width: 50px;
+  height: 50px;
+} */
+
+/* input[type="text"]:disabled {
+  background-color: lightpink;
+} */
+
+/* input[type="text"]:focus {
+  background-color: lightgreen;
+} */
+
+/* p:active {
+  background-color: red;
+} */
+
+/* button:hover {
+  background-color: olive;
+} */
+
+/* .column:first-child img {
+  border: 10px solid red;
+} */
+
+/* .column:last-child img {
+  border: 10px solid red;
+} */
+
+/* .column:nth-child(2) img {
+  border: 10px solid red;
+} */
+
+/* .column:nth-child(even) img {
+  border: 10px solid red;
+} */
+
+/* .column ul li::before {
+  content: " | ";
+} */
+/* 
+p::first-letter {
+  background-color: red;
+  font-size: 24px;
+} */
+
+/* p::first-line {
+  background-color: red;
+  font-size: 24px;
+} */
+
+/* ::selection {
+  background-color: red;
+  color: white;
+} */
+
+/* ::placeholder {
+  color: red;
+} */
+
+/* input[type="text"]:required {
+  background-color: olive;
+} */
+
+.column img:hover {
+  opacity: 0.5;
+}
+
+.box {
+  background-color: rgba(255, 255, 0, 0.5);
+  /* opacity: 0.5; */
+}

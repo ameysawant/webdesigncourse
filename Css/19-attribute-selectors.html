@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css-files/19-attribute-selectors.css">
+</head>
+
+<body>
+
+    <!-- 
+            CSS selectors -
+            We can divide CSS selectors into five categories:
+            a) Simple selectors (select elements based on name, id, class)
+            b) Combinator selectors (select elements based on a specific relationship between them)
+            c) Attribute selectors (select elements based on an attribute or attribute value)
+            d) Pseudo-class selectors (select elements based on a certain state)
+            e) Pseudo-elements selectors (select and style a part of an element)
+
+            It is possible to style HTML elements that have specific attributes or attribute values.
+
+                [attr] - has attribute
+                
+                [attr=value] - has attribute with exact value
+                
+                [attr*=value] - contains any character
+
+                [attr~=value] - space separated word
+                
+                [attr^=value] - starts character
+                
+                [attr$=value] - ends character             
+
+                [attr|=value] - starts with character with hypen separated
+     -->
+
+
+    <div class="container">
+        <h2 class="heading">This is a heading</h2>
+        <h2 class="heading">This is a heading</h2>
+
+        <img src="images/kishoritutorials.jpg" width="100" alt="Kishori Tutorials">
+
+        <img src="images/logo.jpg" width="100" alt="Kishori Tutorials logo">
+
+        <p title="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, repudiandae similique?
+            Rerum at
+            dignissimos numquam praesentium modi, cumque quis aut vero quod ex iusto minus.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, repudiandae similique?
+            Rerum at
+            dignissimos numquam praesentium modi, cumque quis aut vero quod ex iusto minus.</p>
+
+        <a href="" target="">target</a>
+
+        <a href="" target="_blank">target with value</a>
+
+        <a href="" target="https://www.google.com/.pdf">target with value</a>
+
+        <a href="" target="https://www.google.com/">target with value</a>
+
+        <form action="">
+            <input type="text">
+            <input class="m-control" type="date">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+            <button class="btn" value="sendbutton">Send</button>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

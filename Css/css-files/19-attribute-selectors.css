@@ -1,0 +1,39 @@
+* {
+  margin: 15px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 30px auto;
+  width: 95%;
+  background-color: lightskyblue;
+  padding: 15px;
+}
+
+/* [class] {
+  border: 3px solid red;
+} */
+
+/* [class="heading"] {
+  border: 3px solid red;
+} */
+
+/* [title*="m"] {
+  border: 3px solid red;
+} */
+
+/* [alt~="Kishori"] {
+  border: 3px solid red;
+} */
+
+/* [value^="se"] {
+  border: 3px solid red;
+} */
+
+/* [value$="n"] {
+  border: 3px solid red;
+} */
+
+[class|="m"] {
+  border: 3px solid red;
+}

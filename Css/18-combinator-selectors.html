@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css-files/18-combinator-selectors.css">
+</head>
+
+<body>
+
+    <!-- 
+            CSS selectors -
+            We can divide CSS selectors into five categories:
+            a) Simple selectors (select elements based on name, id, class)
+            b) Combinator selectors (select elements based on a specific relationship between them)
+            c) Attribute selectors (select elements based on an attribute or attribute value)
+            d) Pseudo-class selectors (select elements based on a certain state)
+            e) Pseudo-elements selectors (select and style a part of an element)
+
+
+            There are four different combinators in CSS:
+                1. descendant selector (space)
+                    - The descendant selector matches all elements that are descendants of a specified element.
+
+                2. child selector (>)
+                    - The child selector selects all elements that are the children of a specified element.
+
+                3. adjacent sibling selector (+)
+                    - The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+                4. general sibling selector (~)
+                    - The general sibling selector selects all elements that are siblings of a specified element.
+     -->
+
+    <div class="container">
+        <div class="descendant">
+            <h2>This is my heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dicta unde debitis fugit nesciunt cum
+                numquam
+                excepturi, quia ab obcaecati libero dignissimos nihil velit amet.</p>
+            <h2>This is my heading</h2>
+            <div>
+                <h2>this is my another heading</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="parent">
+            <h2>This is my heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dicta unde debitis fugit nesciunt cum
+                numquam
+                excepturi, quia ab obcaecati libero dignissimos nihil velit amet.</p>
+            <h2>This is my heading</h2>
+            <div>
+                <h2>this is my another heading</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="adjacent">
+            <h2>This is my heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dicta unde debitis fugit nesciunt cum
+                numquam
+                excepturi, quia ab obcaecati libero dignissimos nihil velit amet.</p>
+            <h2>This is my heading</h2>
+            <div>
+                <h2>this is my another heading</h2>
+            </div>
+        </div>
+        <h2>this is my another heading</h2>
+        <h2>this is my another heading</h2>
+        <h2>this is my another heading</h2>
+        <h2>this is my another heading</h2>
+        <h2>this is my another heading</h2>
+    </div>
+
+    <div class="container">
+        <div class="general">
+            <h2>This is my heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dicta unde debitis fugit nesciunt cum
+                numquam
+                excepturi, quia ab obcaecati libero dignissimos nihil velit amet.</p>
+            <h2>This is my heading</h2>
+            <div>
+                <h2>this is my another heading</h2>
+            </div>
+        </div>
+        <h2>this is my another heading</h2>
+        <h2>this is my another heading</h2>
+        <h2>this is my another heading</h2>
+        <h2>this is my another heading</h2>
+        <h2>this is my another heading</h2>
+    </div>
+
+
+
+
+</body>
+
+</html>

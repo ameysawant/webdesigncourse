@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 5px 0;
+}
+
+.container {
+  margin: 2% auto;
+  width: 800px;
+}
+
+.descendant {
+  background-color: lightpink;
+  padding: 30px;
+}
+.descendant h2 {
+  background-color: lightblue;
+}
+
+.parent {
+  background-color: lightpink;
+  padding: 30px;
+}
+.parent > h2 {
+  background-color: lightblue;
+}
+
+.adjacent {
+  background-color: lightpink;
+  padding: 30px;
+}
+.adjacent + h2 {
+  background-color: lightblue;
+}
+
+.general {
+  background-color: lightpink;
+  padding: 30px;
+}
+.general ~ h2 {
+  background-color: lightblue;
+}
