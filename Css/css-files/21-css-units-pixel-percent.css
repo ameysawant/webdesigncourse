@@ -1,0 +1,18 @@
+/* .parent {
+  width: 1200px;
+  border: 1px solid black;
+  height: 500px;
+}
+.box {
+  background-color: lightblue;
+  /* width: 800px; 
+  width: 50%;
+} */
+
+/* .parent {
+  font-size: 12px;
+} */
+
+.box {
+  font-size: 200%;
+}
