@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+.bg1 {
+  background-color: lightcoral;
+}
+.bg2 {
+  background-color: lightgreen;
+}
+.bg3 {
+  background-color: lightblue;
+}
+
+/* 576 to down */
+/* all print screen speech */
+@media screen and (max-width: 576px) {
+  .column {
+    width: 100%;
+  }
+}

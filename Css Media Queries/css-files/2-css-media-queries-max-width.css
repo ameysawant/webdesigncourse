@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+.bg1 {
+  background-color: lightcoral;
+}
+.bg2 {
+  background-color: lightgreen;
+}
+.bg3 {
+  background-color: lightblue;
+}
+
+/* 1400 to 1201 */
+@media (max-width: 1400px) {
+  .bg1 {
+    background-color: lightseagreen;
+  }
+}
+
+/* 1200 to 993 */
+@media (max-width: 1200px) {
+  .bg1 {
+    background-color: pink;
+  }
+}
+
+/* 992 to 769 */
+@media (max-width: 992px) {
+  .bg1 {
+    background-color: green;
+  }
+}
+
+/* 768 to 577 */
+@media (max-width: 768px) {
+  .bg1 {
+    background-color: blue;
+  }
+}
+
+/* 576 to down */
+@media (max-width: 576px) {
+  .bg1 {
+    background-color: red;
+  }
+}
