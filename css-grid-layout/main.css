@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  display: grid;
+  padding: 0 15px;
+}
+
+.dvHeader {
+  grid-template-columns: 1fr 1fr;
+  background-color: olive;
+  grid-template-rows: 50px;
+}
+.dvHeader nav {
+  text-align: right;
+}
+.dvHeader nav ul {
+  list-style-type: none;
+}
+.dvHeader nav ul li {
+  display: inline-block;
+}
+.dvHeader nav ul li a {
+  display: block;
+  text-decoration: none;
+}

@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amaranth", sans-serif;
+}
+p {
+  color: #222;
+  line-height: 1.5;
+}
+
+a {
+  background-color: lightseagreen;
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-color: #222;
+  text-align: center;
+  padding: 2rem 0;
+}
+.header h1 {
+  color: white;
+}
+.header p {
+  color: white;
+}
+
+.navigation {
+  background-color: #000;
+}
+.navigation ul {
+  list-style-type: none;
+  text-align: center;
+}
+.navigation ul li {
+  display: inline-block;
+}
+.navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  background-color: black;
+}
+.navigation ul li.active a,
+.navigation ul li a:hover {
+  background-color: lightblue;
+  color: #222;
+}
+
+.banner {
+  text-align: center;
+  padding: 10rem 0;
+  background-color: lightblue;
+}
+
+.mainContent {
+  float: left;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: lightpink;
+}
+.mainContent .leftColumn {
+  float: left;
+  width: 20%;
+  padding: 0 1rem;
+}
+.mainContent .leftColumn .col img,
+.mainContent .rightColumn .col img,
+.mainContent .middleColumn .col img {
+  max-width: 100%;
+}
+.mainContent .middleColumn {
+  float: left;
+  width: 60%;
+  padding: 0 1rem;
+}
+.mainContent .rightColumn {
+  float: left;
+  width: 20%;
+  padding: 0 1rem;
+}
+.mainContent .col {
+  margin-bottom: 2rem;
+}
+.mainContent .col h6 {
+  margin-bottom: 1rem;
+}
+.mainContent .col ul {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+.mainContent .col ul li {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+.banner p,
+.mainContent p {
+  margin: 0.5rem 0;
+}
+
+.footer {
+  clear: both;
+  background-color: #222;
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer p {
+  color: white;
+}
