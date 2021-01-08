@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amaranth", sans-serif;
+}
+
+/*for all anchors css*/
+a {
+  background-color: lightseagreen;
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+/*for all paragraphs css*/
+p {
+  line-height: 1.5;
+  color: #222;
+}
+
+/*header css*/
+.header {
+  background-color: #222;
+  text-align: center;
+  padding: 2rem 0;
+}
+.header h1,
+.header p {
+  color: white;
+}
+
+/*navigation css*/
+.navigation ul {
+  list-style-type: none;
+  background-color: black;
+  text-align: center;
+}
+.navigation ul li {
+  display: block;
+}
+.navigation ul li.active a {
+  background-color: lightblue;
+  color: #222;
+}
+.navigation ul li a {
+  display: block;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: black;
+}
+.navigation ul li a:hover {
+  background-color: lightblue;
+  color: #222;
+}
+
+/*banner css*/
+.banner {
+  background-color: lightblue;
+  padding: 10rem 0;
+  text-align: center;
+}
+.banner p {
+  margin: 1rem 0;
+}
+
+/*main css*/
+.main {
+  float: left;
+  width: 100%;
+  background-color: lightpink;
+  padding: 1rem 0;
+}
+.main .col {
+  margin-bottom: 2rem;
+}
+.main .col img {
+  max-width: 100%;
+  margin: 0.5rem 0;
+}
+.main .col p {
+  margin-bottom: 1rem;
+}
+.main ul {
+  list-style-type: none;
+}
+.main ul li {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/*left Column css*/
+.leftColumn {
+  float: left;
+  width: 100%;
+  /* background-color: red; */
+  padding: 0 1rem;
+}
+
+/*middle Column css*/
+.middleColumn {
+  float: left;
+  width: 100%;
+  /* background-color: yellow; */
+  padding: 0 1rem;
+}
+
+/*right Column css*/
+.rightColumn {
+  float: left;
+  width: 100%;
+  /* background-color: green; */
+  padding: 0 1rem;
+}
+
+/*footer css*/
+.footer {
+  background-color: #222;
+  text-align: center;
+  padding: 2rem 0;
+  clear: both;
+}
+.footer p {
+  color: white;
+}
+
+/*576 to 767*/
+@media (min-width: 576px) {
+  .navigation ul li {
+    display: inline-block;
+  }
+  .navigation ul li a {
+    display: inline-block;
+  }
+}
+
+/*768 to 991*/
+@media (min-width: 768px) {
+  .leftColumn {
+    width: 33.33%;
+  }
+  .rightColumn {
+    width: 33.33%;
+  }
+  .middleColumn {
+    width: 33.33%;
+  }
+}
+
+/*992 to 1199*/
+@media (min-width: 992px) {
+  .leftColumn {
+    width: 25%;
+  }
+  .rightColumn {
+    width: 25%;
+  }
+  .middleColumn {
+    width: 50%;
+  }
+}
+
+/*1200 to 1399*/
+@media (min-width: 1200px) {
+  .leftColumn {
+    width: 20%;
+  }
+  .rightColumn {
+    width: 20%;
+  }
+  .middleColumn {
+    width: 60%;
+  }
+}
+
+/*1400 to up*/
+@media (min-width: 1400px) {
+}

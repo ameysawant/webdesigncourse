@@ -1,0 +1,40 @@
+/*0 to 576*/
+body {
+  background-color: lightblue;
+  padding: 5rem;
+}
+
+/*576 to 767*/
+@media (min-width: 576px) {
+  body {
+    background-color: red;
+  }
+}
+
+/*768 to 991*/
+@media (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+}
+
+/*992 to 1199*/
+@media (min-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/*1200 to 1399*/
+@media (min-width: 1200px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/*1400 to up*/
+@media (min-width: 1400px) {
+  body {
+    background-color: purple;
+  }
+}

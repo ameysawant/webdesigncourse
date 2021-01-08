@@ -1,0 +1,40 @@
+/*1400 and up*/
+body {
+  background-color: lightblue;
+  padding: 5rem;
+}
+
+/*1400 to 1201*/
+@media (max-width: 1400px) {
+  body {
+    background-color: purple;
+  }
+}
+
+/*1200 to 993*/
+@media (max-width: 1200px) {
+  body {
+    background-color: orange;
+  }
+}
+
+/*992 to 769*/
+@media (max-width: 992px) {
+  body {
+    background-color: green;
+  }
+}
+
+/*768 to 577*/
+@media (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/*576 to down*/
+@media (max-width: 576px) {
+  body {
+    background-color: red;
+  }
+}
