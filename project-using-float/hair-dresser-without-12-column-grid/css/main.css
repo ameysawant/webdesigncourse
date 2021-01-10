@@ -1,0 +1,105 @@
+ul,
+ol {
+  padding: 0;
+}
+
+.slider {
+  background: url("../images/slider1.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.slider nav {
+  background-color: rgba(0, 0, 0, 1);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  /* display: none; */
+}
+.slider nav ul {
+  list-style-type: none;
+}
+.slider nav ul li {
+  display: block;
+}
+.slider nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #222;
+}
+.slider nav ul li.active a {
+  background-color: #ba732a;
+}
+.slider .bars {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  padding: 0.5rem 0.75rem;
+  border: none;
+}
+.slider .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+.slider .sliderTextBox {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider .sliderTextBox h1,
+.slider .sliderTextBox .subTitle,
+.slider .sliderTextBox p {
+  color: white;
+}
+.slider .sliderTextBox .subTitle {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .slider .bars,
+  .slider .closeBtn {
+    display: none;
+  }
+  .slider nav {
+    padding-top: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+    height: auto;
+    position: static;
+    top: unset;
+    left: unset;
+    z-index: unset;
+  }
+  .slider nav ul {
+    text-align: center;
+  }
+  .slider nav ul li {
+    display: inline-block;
+  }
+  .slider nav ul li a {
+    border-bottom: none;
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem;
+  }
+  .slider .sliderTextBox {
+    width: 75%;
+  }
+  .slider .sliderTextBox h1 {
+    font-size: 4rem;
+  }
+  .slider .sliderTextBox .subTitle {
+    font-size: 2rem;
+  }
+}
