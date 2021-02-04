@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Comparison Operators</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        Comparison Operators
+    </h4>
+
+    <!-- 
+            ==  ===  !=  !==  >  <  >=  <=  null  undefined
+         -->
+
+    <script>
+
+        const a = 10;
+        const b = '10';
+        const c = a == b; // check only value ==
+
+        const d = '10';
+        const e = '10';
+        const f = d === e; // check value and type ===
+
+        const g = 10;
+        const h = '10';
+        const i = g != h; // check only value
+
+        const j = 10;
+        const k = '10';
+        const l = j !== k; // check only value and type
+
+        document.write(
+            c + '<br>',
+            f + '<br>',
+            i + '<br>',
+            l + '<br>',
+        )
+
+    </script>
+
+
+</body>
+
+</html>

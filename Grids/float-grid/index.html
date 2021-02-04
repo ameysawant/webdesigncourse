@@ -33,8 +33,8 @@
     @media (min-width: 1400px) { ... }
 
     4) BREAKPOINTS - done
-    .col 0 = <576
-    .col-sm: 576px = >576
+    .col-1 .col-12 0 = <576
+    .col-sm-1 .col-sm-12 : 576px = >576
     .col-md: 768px = >768
     .col-lg: 992px = >992
     .col-xl: 1200px = >1200
@@ -59,32 +59,41 @@
     8) ORDERS - PUSH PULL
     .left{},
     .right{}
+
+    9) REUSABLE RESPONSIVE CLASSES
+    text-align
+    display
+
+    10) TEST GRID SYSTEM
     
  -->
 
-    <div class="container">
+    <div class="container-xl">
         <div class="row">
-            <div class="col-sm-4 left-sm-8">
-                <img src="images/kishoritutorials.jpg" width="100%" alt="">
+            <!-- 0 - 575  576 - 767  768 - 991  992 - 1199  1200 - 1399  1400 - up  -->
+            <div class="col-sm-12">
+                <h1>Kishori Tutorials</h1>
+                <div class="row">
+                    <div class="col-4 col-sm-2">
+                        <img src="images/logo.jpg" alt="" width="50">
+                    </div>
+                    <div class="col-8 col-sm-10">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eos omnis voluptatum facere
+                            pariatur
+                            architecto vero sapiente quibusdam numquam, consequatur quidem odio veritatis esse adipisci
+                            fugiat
+                            illo earum distinctio voluptatibus atque vitae velit sit odit? Molestias dolorem tenetur
+                            excepturi
+                            corrupti harum alias assumenda aperiam adipisci magnam itaque! Sunt, cupiditate illum.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-8 right-sm-4">
-                <h1>heading 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum at saepe voluptates vitae temporibus
-                    omnis debitis laborum quibusdam tempore rerum dolor fugit distinctio aut officiis voluptas
-                    provident, quia porro labore.</p>
+            <div class="col-sm-12">
+                <h1>Kishori Tutorials</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad nihil reprehenderit
+                    dignissimos. Aut unde quasi assumenda eveniet debitis ad ipsum voluptatibus quia officia iure
+                    asperiores libero autem, odit dicta possimus, nihil nemo error architecto.</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="images/kishoritutorials.jpg" width="100%" alt="">
-            </div>
-            <div class="col-sm-8">
-                <h1>heading 2</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum at saepe voluptates vitae temporibus
-                    omnis debitis laborum quibusdam tempore rerum dolor fugit distinctio aut officiis voluptas
-                    provident, quia porro labore.</p>
-            </div>
-
         </div>
     </div>
 
