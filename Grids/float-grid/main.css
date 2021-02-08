@@ -1,0 +1,81 @@
+/*reusable classes*/
+body {
+  font-family: "Amaranth", sans-serif;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.rmBtn {
+  background-color: lightseagreen;
+  padding: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+p {
+  line-height: 1.5;
+}
+
+/*header css*/
+.header {
+  background-color: #222;
+}
+.header h1,
+.header p {
+  color: white;
+}
+
+/*navigation css*/
+.navigation {
+  background-color: black;
+}
+.navigation ul {
+  list-style-type: none;
+}
+.navigation ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+.navigation ul li a:hover {
+  background-color: lightblue;
+  color: black;
+}
+.navigation ul li.active a {
+  background-color: lightblue;
+  color: black;
+}
+
+/*banner css*/
+.banner {
+  background-color: lightblue;
+  padding: 10rem 1rem;
+}
+
+/*maincontent css*/
+.maincontent {
+  background-color: lightpink;
+}
+.maincontent ul {
+  list-style: none;
+}
+.maincontent ul li {
+  background-color: white;
+  padding: 1rem;
+}
+
+/*footer css*/
+.footer {
+  background-color: #222;
+}
+.footer p {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .navigation ul li {
+    display: inline-block;
+  }
+}
