@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript else if part 2</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        else if part 2
+    </h4>
+
+    <script>
+        const totalMarks = 350;
+        const percentage = totalMarks / 5;
+        document.write(percentage + '%');
+
+        if (percentage >= 35 && percentage < 40) {
+            document.write('you just passed');
+        }
+        else if (percentage >= 40 && percentage < 60) {
+            document.write('you are average');
+        }
+        else if (percentage >= 60 && percentage < 75) {
+            document.write('you got distinction');
+        }
+        else if (percentage >= 75 && percentage <= 100) {
+            document.write('you are in merit list');
+        }
+        else {
+            document.write('you are fail');
+        }
+    </script>
+
+
+</body>
+
+</html>

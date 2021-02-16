@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hair Stylist</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -14,8 +19,14 @@
     <div class="header">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <ul class="navigation">
+                <button class="menuBtn d-md-none">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="col-12 slide px-0">
+                    <button class="closeBtn d-md-none">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <ul class="navigation text-md-center mt-md-3">
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">About Me</a></li>
                         <li><a href="">My Work</a></li>
@@ -24,124 +35,120 @@
                 </div>
             </div>
         </div>
-        <div class="slide-heading container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Sharmila Sathe</h1>
-                    <h3>Hair Stylist</h3>
-                    <p class="paragraph">While it may not be obvious to everyone, there are a number of reasons creating
-                        random paragraphs can be useful. A few examples of how some people use this generator are listed
-                        in the following paragraphs.</p>
-                    <a href="" class="btn btnPrimary">Services</a>
-                </div>
-            </div>
+        <div class="slide-heading text-center">
+            <h1>Sharmila Sathe</h1>
+            <h3 class="mt-2 mb-3">Hair Stylist</h3>
+            <p class="paragraph mb-3">While it may not be obvious to everyone, there are a number of reasons creating
+                random paragraphs can be useful. A few examples of how some people use this generator are listed
+                in the following paragraphs.</p>
+            <a href="" class="btn btnPrimary">Services</a>
         </div>
     </div>
 
-    <div class="services">
+    <div class="services py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h2>Services</h2>
+                <div class="col-12 text-center mb-5">
+                    <h2 class="heading mb-2">Services</h2>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.Lorem ipsum dolor sit amet, consectetuer.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 text-center mb-3 mb-lg-5">
                     <img src="images/icon-1.png" alt="" />
-                    <h4>Hair Cut</h4>
+                    <h4 class="my-2">Hair Cut</h4>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 text-center mb-3 mb-lg-5">
                     <img src="images/icon-2.png" alt="" />
-                    <h4>Hair Cut</h4>
+                    <h4 class="my-2">Hair Cut</h4>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 text-center mb-3 mb-lg-5">
                     <img src="images/icon-1.png" alt="" />
-                    <h4>Hair Cut</h4>
+                    <h4 class="my-2">Hair Cut</h4>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 text-center mb-3 mb-lg-5">
                     <img src="images/icon-1.png" alt="" />
-                    <h4>Hair Cut</h4>
+                    <h4 class="my-2">Hair Cut</h4>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 text-center mb-3 mb-lg-5">
                     <img src="images/icon-1.png" alt="" />
-                    <h4>Hair Cut</h4>
+                    <h4 class="my-2">Hair Cut</h4>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.</p>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 text-center mb-3 mb-lg-5">
                     <img src="images/icon-1.png" alt="" />
-                    <h4>Hair Cut</h4>
+                    <h4 class="my-2">Hair Cut</h4>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.</p>
                 </div>
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <a href="" class="btn btnPrimary">More Services</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="recommended">
+    <div class="recommended py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h2>Recommended For You</h2>
+                <div class="col-12 text-center mb-5">
+                    <h2 class="heading mb-2">Recommended For You</h2>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.Lorem ipsum dolor sit amet, consectetuer.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3 text-center mb-5">
                     <img src="images/p1.jpg" class="img-fluid" alt="" />
                     <h5>Arabic Design</h5>
                     <p>Rs. 2150.00</p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3 text-center mb-5">
                     <img src="images/p2.jpg" class="img-fluid" alt="" />
                     <h5>Arabic Design</h5>
                     <p>Rs. 2150.00</p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3 text-center mb-5">
                     <img src="images/p3.jpg" class="img-fluid" alt="" />
                     <h5>Arabic Design</h5>
                     <p>Rs. 2150.00</p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3 text-center mb-5">
                     <img src="images/p4.jpg" class="img-fluid" alt="" />
                     <h5>Arabic Design</h5>
                     <p>Rs. 2150.00</p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3 text-center mb-5">
                     <img src="images/p1.jpg" class="img-fluid" alt="" />
                     <h5>Arabic Design</h5>
                     <p>Rs. 2150.00</p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3 text-center mb-5">
                     <img src="images/p2.jpg" class="img-fluid" alt="" />
                     <h5>Arabic Design</h5>
                     <p>Rs. 2150.00</p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3 text-center mb-5">
                     <img src="images/p3.jpg" class="img-fluid" alt="" />
                     <h5>Arabic Design</h5>
                     <p>Rs. 2150.00</p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3 text-center mb-5">
                     <img src="images/p4.jpg" class="img-fluid" alt="" />
                     <h5>Arabic Design</h5>
                     <p>Rs. 2150.00</p>
                 </div>
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <a href="" class="btn btnPrimary">More Designs</a>
                 </div>
             </div>
@@ -152,7 +159,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-white">Testimonials</h2>
+                    <h2 class="heading text-white">Testimonials</h2>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.Lorem ipsum dolor sit amet, consectetuer.</p>
                 </div>
@@ -180,7 +187,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Book Now</h2>
+                    <h2 class="heading">Book Now</h2>
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean sollicitudin,
                         lorem quis bibendum auci elit consequat ipsutis.Lorem ipsum dolor sit amet, consectetuer.</p>
                 </div>

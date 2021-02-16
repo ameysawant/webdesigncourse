@@ -1,0 +1,146 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  outline: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.btnPrimary {
+  background-color: #ba732a;
+  color: white;
+}
+.paragraph {
+  color: #777;
+}
+.heading {
+  font-size: 2rem;
+  color: #222;
+  font-weight: 400;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/*header css*/
+.header {
+  background: url("../images/slider-1.jpg") no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+.header .slide {
+  position: fixed;
+  background: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  z-index: 2;
+}
+.header .navigation {
+  list-style-type: none;
+}
+.header .navigation li a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #292929;
+}
+.header .navigation li.active a {
+  background-color: #ba732a;
+}
+.header .closeBtn {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  z-index: 3;
+  border: none;
+  padding: 0.5rem;
+}
+.header .menuBtn {
+  position: absolute;
+  background: none;
+  top: 0.2rem;
+  right: 0.2rem;
+  z-index: 1;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem;
+}
+
+.header .slide-heading {
+  position: absolute;
+  width: 100%;
+  padding: 0 1rem;
+  /* background: olive; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*recommended css*/
+.recommended {
+  background-color: #f9f9f9;
+}
+.recommended h5 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+@media (min-width: 576px) {
+  .header .slide-heading {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .slide {
+    position: static;
+    background: none;
+    width: 100%;
+    height: auto;
+    top: unset;
+    left: unset;
+    z-index: unset;
+  }
+
+  .header .navigation li {
+    display: inline-block;
+  }
+  .header .navigation li a {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+  .header h1 {
+    font-size: 3rem;
+  }
+  .header h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header .slide-heading {
+    width: 50%;
+  }
+  .header h1 {
+    font-size: 4rem;
+  }
+  .header h3 {
+    font-size: 2rem;
+  }
+}
