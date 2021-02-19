@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript switch case</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        switch case
+    </h4>
+
+    <script>
+
+        // const totalMarks = 350;
+        // const percentage = totalMarks / 5;
+        // document.write(percentage + '%');
+
+        // if (percentage >= 35 && percentage < 40) {
+        //     document.write('you just passed');
+        // }
+        // else if (percentage >= 40 && percentage < 60) {
+        //     document.write('you are average');
+        // }
+        // else if (percentage >= 60 && percentage < 75) {
+        //     document.write('you got distinction');
+        // }
+        // else if (percentage >= 75 && percentage <= 100) {
+        //     document.write('you are in merit list');
+        // }
+        // else {
+        //     document.write('you are fail');
+        // }
+
+        // const a = 'abc';
+        // switch (a) {
+        //     case 'kishori': document.write('kishori tutorials');
+        //         break;
+
+        //     case 'abc': document.write('abc');
+        //         break;
+
+        //     case 2: document.write('this is two');
+        //         break;
+
+        //     default: document.write('default');
+        // }
+
+        const percentage = 34;
+
+        switch (true) {
+            case percentage >= 35 && percentage < 40:
+                document.write('you just passed ');
+                break;
+
+            case percentage >= 40 && percentage < 60:
+                document.write('you average ');
+                break;
+
+            case percentage >= 60 && percentage < 75:
+                document.write('you distinction ');
+                break;
+
+            case percentage >= 75 && percentage <= 100:
+                document.write('you merit ');
+                break;
+
+            default:
+                document.write('fail');
+        }
+        document.write(percentage + '%');
+    </script>
+
+
+</body>
+
+</html>
