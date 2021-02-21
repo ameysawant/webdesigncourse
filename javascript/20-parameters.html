@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript function parameters</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        function parameters and arguments
+    </h4>
+
+    <script>
+
+        /*
+            arguments
+            parameter
+            default parameter
+            index of parameter
+            can pass variable values as an arguments
+            rest parameter
+            log parameter
+            log arguments
+        */
+
+
+
+        const fullName2 = 'Aniket Paste';
+        const age2 = 24;
+        const salary2 = 45000;
+        const phone2 = 888888;
+
+        const aniketPaste = function (fullName, ...rest) {
+            document.write(fullName + ' ' + rest + '<br><br>');
+            console.log(rest);
+            console.log(arguments);
+        }
+        aniketPaste(fullName2, age2, salary2, phone2);
+
+
+
+    </script>
+
+
+</body>
+
+</html>
