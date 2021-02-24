@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript return statement</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        return statement
+    </h4>
+
+    <script>
+        const eng = 45, his = 75, geo = 48, maths = 75, sci = 98;
+        const totalMarks = eng + his + geo + maths + sci;
+        const outOf = 500;
+
+        const calculate = function () {
+            const percentage = totalMarks * 100 / outOf;
+            // document.write(percentage + '%');
+            return percentage;
+        }
+        const x = calculate();
+
+        const getPercentage = function () {
+            return x;
+        }
+        const a = getPercentage();
+
+        const myAnotherFunction = function () {
+            document.write(a + '% i am from another function');
+        }
+        myAnotherFunction();
+
+    </script>
+
+
+</body>
+
+</html>

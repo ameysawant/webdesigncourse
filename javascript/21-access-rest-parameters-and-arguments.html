@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript access rest parameters and arguments</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        access rest parameters and arguments
+    </h4>
+
+    <script>
+
+        /*
+            access
+            change
+            length
+        */
+
+
+
+        // const fullName2 = 'Aniket Paste';
+        // const age2 = 24;
+        // const salary2 = 45000;
+        // const phone2 = 888888;
+
+        // rest
+        // const aniketPaste = function (fullName, ...rest) {
+        //     document.write(fullName + ' ' + rest + '<br><br>');
+        //     document.write(rest.length);
+        // }
+        // aniketPaste('Aniket Paste', 24, 45000, 888888);
+
+
+        // arguments
+        const aniketPaste = function () {
+            document.write(arguments.length);
+            console.log(arguments);
+        }
+        aniketPaste('Aniket Paste', 24, 45000, 888888);
+
+
+
+    </script>
+
+
+</body>
+
+</html>
