@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript nested for loop</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        nested for loop
+    </h4>
+
+    <script>
+        //         0        3 < 3  3
+        for (let a = 0; a < 3; a++) {
+            document.write('<b>outer loop</b><br>');
+            //         0        2 < 2  2
+            for (let b = 0; b < 2; b++) {
+                document.write('inner loop<br>');
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

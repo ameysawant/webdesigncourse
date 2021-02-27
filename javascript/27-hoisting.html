@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript hoisting</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        hoisting
+    </h4>
+
+    <script>
+        /*
+        Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
+
+        To avoid bugs, always declare all variables at the beginning of every scope.
+
+        Since this is how JavaScript interprets the code, it is always a good rule.
+        */
+
+        var a;
+        a = 15;
+        document.write(a);
+
+        /*
+            var a;
+            a = 15;
+            document.write(a);
+        */
+
+        function abc() {
+            document.write(a);
+            var a = 25;
+        }
+        abc();
+
+        /*
+        function abc() {
+            var a;
+            document.write(a);
+            a = 25;
+        }
+        abc();
+        */
+
+    </script>
+
+
+</body>
+
+</html>
