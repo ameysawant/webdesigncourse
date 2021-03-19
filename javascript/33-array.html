@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript array</title>
+</head>
+
+<body>
+
+    <h4 id="header" title="mytitle">
+        array
+    </h4>
+
+    <script>
+        /*
+            array store multiple values
+            array literal
+            array with new keyword
+            modify
+            delete
+            access from another variable changes original array values
+            length property
+            array with for loop
+        */
+
+        // array literal
+        //                  0          1      2           3        index
+        const a = ['kishori', 450, 45000, 'mumbai'];
+        // const b = a;
+        // document.write(a[0]); // access single value
+        // a[0] = 'amey'; // modify
+        // delete a[3]; // delete
+        // b[0] = 'amey';
+        // document.write(a + '<br>');
+        // document.write(b);
+
+        // document.write(a.length)
+
+        // array with new keyword
+        // const b = new Array('kishori', 450, 45000, 'mumbai');
+        // document.write(b);
+
+        let myArrayLength = a.length;
+        //         0      4 < 4                       4
+        for (let i = 0; i < myArrayLength; i++) {
+            document.write(a[i] + '<br>'); // a[3] kishori 450 45000 mumbai
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
