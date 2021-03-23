@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
 }
 .btn {
   border: none;
@@ -26,6 +27,53 @@ body {
   display: inline-block;
 }
 
+/*owl carousel css*/
+.owl-carousel .owl-dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 3rem;
+  z-index: 9;
+}
+.owl-carousel .owl-dots button.owl-dot {
+  background: #ba732a;
+  padding: 0.5rem !important;
+  border-radius: 5rem;
+  margin-right: 1rem;
+}
+.owl-carousel .owl-dots button.owl-dot:last-child {
+  margin-right: 0;
+}
+.owl-carousel .owl-dots button.owl-dot.active {
+  background: white;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background: #ba732a;
+  padding: 0.5rem 1rem !important;
+  color: white;
+  font-size: 2rem;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 9;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-carousel .owl-item img {
+  display: inline-block;
+  width: auto;
+}
+
 /*nav css*/
 .nav {
   position: fixed;
@@ -42,6 +90,7 @@ body {
   top: 0;
   left: -100%;
   z-index: 2;
+  transition: all ease-in-out 0.5s;
 }
 .nav .navigation {
   list-style-type: none;
@@ -95,6 +144,11 @@ body {
   background: url("../images/slide-4.jpg") no-repeat top center;
   background-size: cover;
 }
+.header .opacity {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
 
 .header .slide-heading {
   position: absolute;
@@ -137,6 +191,9 @@ body {
 .testimonials h6 {
   font-size: 1rem;
 }
+.testimonials .owl-carousel .owl-dots {
+  bottom: 0;
+}
 
 /* booknow css */
 .booknow .dateinput {
@@ -176,6 +233,8 @@ body {
 /*footer css*/
 .footer {
   background-color: black;
+  position: sticky;
+  top: 100%;
 }
 .footer .heading,
 .footer .fa-instagram {
