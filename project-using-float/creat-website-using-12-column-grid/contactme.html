@@ -27,7 +27,7 @@
                     <button class="closeBtn d-md-none">
                         <i class="fa fa-times"></i>
                     </button>
-                    <ul class="navigation text-md-center mt-md-3">
+                    <ul class="navigation text-md-center">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="mywork.html">My Work</a></li>
                         <li class="active"><a href="contactme.html">Contact Me</a></li>
@@ -172,6 +172,35 @@
         </div>
     </div>
 
+    <script>
+        const menuBtn = document.querySelector('.menuBtn');
+        const slide = document.querySelector('.slide');
+        const closeBtn = document.querySelector('.closeBtn');
+        const faBars = document.querySelector('.nav .fa-bars');
+        const nav = document.querySelector('.nav');
+        nav.style.padding = '1.3rem 0';
+
+        menuBtn.addEventListener('click', function () {
+            slide.style.left = 0;
+        });
+        closeBtn.addEventListener('click', function () {
+            slide.style.left = '-100%';
+        });
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 50 && window.innerWidth > 767) {
+                nav.style.backgroundColor = 'rgba(0,0,0,0.7)';
+            } else if (window.pageYOffset > 50 && window.innerWidth < 768) {
+                menuBtn.style.borderColor = '#ba732a';
+                faBars.style.color = '#ba732a';
+            }
+            else {
+                nav.style.backgroundColor = '';
+                menuBtn.style.borderColor = 'white';
+                faBars.style.color = 'white';
+            }
+        }
+    </script>
 </body>
 
 </html>

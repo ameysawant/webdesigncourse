@@ -18,6 +18,10 @@
 
 <body>
 
+    <button class="btn btnRed">red</button>
+    <button class="btn btnBlue">blue</button>
+    <button class="btn btnReset">reset</button>
+
     <div class="nav">
         <div class="container">
             <div class="row">
@@ -420,6 +424,22 @@
                 faBars.style.color = 'white';
             }
         }
+
+        const root = document.querySelector(':root');
+        const btnRed = document.querySelector('.btnRed');
+        const btnBlue = document.querySelector('.btnBlue');
+        const btnReset = document.querySelector('.btnReset');
+        // const x = getComputedStyle(root).getPropertyValue('--primary-color');
+        // console.log(x);
+        btnRed.addEventListener('click', function () {
+            root.style.setProperty('--primary-color', 'red');
+        });
+        btnBlue.addEventListener('click', function () {
+            root.style.setProperty('--primary-color', 'blue');
+        });
+        btnReset.addEventListener('click', function () {
+            root.style.setProperty('--primary-color', 'orange');
+        });
     </script>
 
 </body>

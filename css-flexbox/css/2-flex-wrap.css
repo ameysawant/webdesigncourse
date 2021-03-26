@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: lightblue;
+  padding: 1rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap-reverse;
+}
+.container .col {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: lightcoral;
+}
