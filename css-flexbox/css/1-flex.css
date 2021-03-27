@@ -2,21 +2,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-img {
-  max-width: 100%;
-  display: inline-block;
-}
 .container {
   background-color: lightblue;
   padding: 1rem;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 .container .col {
+  background-color: lightcoral;
   padding: 1rem;
   margin: 1rem;
-  background-color: lightcoral;
-  width: 15%;
 }
 .container .col:first-child {
   display: flex;

@@ -6,11 +6,11 @@
   background-color: lightblue;
   padding: 1rem;
   display: flex;
-  /* flex-wrap: wrap-reverse; */
-  flex-flow: row-reverse wrap-reverse;
+  justify-content: space-evenly;
 }
 .container .col {
   padding: 1rem;
   margin: 1rem;
   background-color: lightcoral;
+  width: 20%;
 }
