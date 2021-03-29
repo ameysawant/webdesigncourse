@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: lightblue;
+  padding: 1rem;
+  display: flex;
+}
+.container .col {
+  padding: 1rem;
+  margin: 0.1rem;
+  background-color: lightcoral;
+}
+.container .col h1 {
+  font-size: 1.2rem;
+}
+.container .col:nth-child(1) {
+  flex-shrink: 10;
+}
+.container .col:nth-child(2) {
+  flex-shrink: 5;
+}
+.container .col:nth-child(3) {
+  flex-shrink: 1;
+}
