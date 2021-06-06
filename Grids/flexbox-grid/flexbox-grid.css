@@ -107,9 +107,9 @@
 .col-xl-9,
 .col-xl-10,
 .col-xl-11,
+.col-xl-12,
 .col-xxl,
 .col-xxl-auto,
-.col-xxl-12,
 .col-xxl-1,
 .col-xxl-2,
 .col-xxl-3,
@@ -126,6 +126,7 @@
   padding-right: 15px;
   position: relative;
   width: 100%;
+  border: 1px solid #ccc;
 }
 .col {
   -ms-flex-preferred-size: 0;

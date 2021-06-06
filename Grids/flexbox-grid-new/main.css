@@ -1,0 +1,51 @@
+.bgColor {
+  background-color: blue;
+}
+.border {
+  border: 5px solid violet;
+}
+
+@media (min-width: 576px) {
+  .bgColor {
+    background-color: red;
+  }
+  .border-sm {
+    border: 5px solid violet;
+  }
+}
+
+@media (min-width: 768px) {
+  .bgColor {
+    background-color: green;
+  }
+  .border-md {
+    border: 5px solid violet;
+  }
+}
+
+@media (min-width: 992px) {
+  .bgColor {
+    background-color: orange;
+  }
+  .border-lg {
+    border: 5px solid violet;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bgColor {
+    background-color: lightblue;
+  }
+  .border-xl {
+    border: 5px solid violet;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bgColor {
+    background-color: lightcoral;
+  }
+  .border-xxl {
+    border: 5px solid violet;
+  }
+}
